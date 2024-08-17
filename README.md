@@ -9,15 +9,15 @@
 ### 💠快捷链接
 
 {% content-ref url="other/tos.md" %}
-[tos.md](other/tos.md)
+[法律声明](other/tos.md)
 {% endcontent-ref %}
 
 {% content-ref url="first-install.md" %}
-[first-install.md](first-install.md)
+[首次安装](first-install.md)
 {% endcontent-ref %}
 
 {% content-ref url="plugin-usage/adding-content/" %}
-[adding-content](plugin-usage/adding-content/)
+[添加内容](plugin-usage/adding-content/)
 {% endcontent-ref %}
 
 ### 🌐社交媒体
