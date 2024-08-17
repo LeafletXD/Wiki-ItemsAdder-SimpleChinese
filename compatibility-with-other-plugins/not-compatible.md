@@ -1,11 +1,11 @@
-# ⚠ Not compatible
+# ⚠ 不兼容
 
-_**Is it compatible with plugin X?**_
+_**与XX插件兼容吗？**_
 
-I can't answer surely to this question because I can't know how every plugin in the world is coded, but here is a list of plugins that can cause problems:
+我不能确切回答这个问题，因为我无法知道世界上每个插件的编码方式，但以下是可能引起问题的插件列表：
 
-* All plugins that uses **custom resourcepacks** (you can make them compatible if you've a minimum knowledge on how to merge resourcepacks manually, be sure to not replace ItemsAdder files and you're done)
-* [CraftEnhance](https://www.spigotmc.org/resources/custom-recipes-and-crafting-craftenhance.65058/), this plugin messes up ItemsAdder custom recipes logic and creates duplication bugs. So please don't use it
-* Plugins that customize crafting table behaviour and recipes
-* [LootChest ](https://www.spigotmc.org/resources/lootchest.61564/)can cause some [problems](https://github.com/LoneDev6/ItemsAdder/issues/15#issuecomment-512990849)
-* For now it's **not compatible** with **plugins** and world generators that **spawn mushroom** blocks with different faces to create custom textures. In the future I will add compatibility.
+* 所有使用 **自定义资源包** 的插件（如果您有基本的资源包合并知识，可以使它们兼容，请确保不替换 ItemsAdder 文件，您就完成了）
+* [CraftEnhance](https://www.spigotmc.org/resources/custom-recipes-and-crafting-craftenhance.65058/)，此插件会混乱 ItemsAdder 的自定义配方逻辑，并造成重复物品的错误。因此，请不要使用它
+* 自定义合成台行为和配方的插件
+* [LootChest](https://www.spigotmc.org/resources/lootchest.61564/) 可能会导致一些 [问题](https://github.com/LoneDev6/ItemsAdder/issues/15#issuecomment-512990849)
+* 目前**不兼容**那些使用不同面来创建自定义纹理的 **插件** 和世界生成器。未来我会添加兼容性。
