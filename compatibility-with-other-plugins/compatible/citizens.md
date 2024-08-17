@@ -1,7 +1,7 @@
 # Citizens
 
-## [Download here](https://ci.citizensnpcs.co/job/citizens2/)
+## [点击下载](https://ci.citizensnpcs.co/job/citizens2/)
 
-## Spigot page:
+## Spigot 页面:
 
 {% embed url="https://www.spigotmc.org/resources/citizens.13811/" %}
