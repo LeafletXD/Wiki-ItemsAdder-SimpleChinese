@@ -1,49 +1,48 @@
 # AnimatedScoreboard
 
-## [Download here](https://www.spigotmc.org/resources/animatedscoreboard.20848/)
+## [点击下载](https://www.spigotmc.org/resources/animatedscoreboard.20848/)
 
 {% hint style="warning" %}
-Please refer to the plugin page tutorials before asking for help, I'm not the developer of this plugin and this info might become outdated at some point.
+请在寻求帮助之前参考插件页面的教程。我并不是该插件的开发者，因此此信息可能会随着时间的推移而变得过时。
 {% endhint %}
 
-## Font images in the scoreboard
+## 记分板中的字体图像
 
-You can use [font\_images ](../../plugin-usage/adding-content/font-images/)(emojis and symbols) in the scoreboard if you install **PlaceholderAPI**.
+如果安装了 **PlaceholderAPI**，你可以在记分板中使用 [字符图像](../../plugin-usage/adding-content/font-images/)（表情符号和符号）。
 
-### Example
+### 示例
 
-`%img_smile%` will show like that:
+`%img_smile%` 将显示如下：
 
 ![](../../.gitbook/assets/animatedscoreboard\_1.png)
 
-## Hide the scoreboard background
+## 隐藏记分板背景
 
-With ItemsAdder you can hide the scoreboard background, just use this trick.
+使用 ItemsAdder，你可以隐藏记分板的背景，只需使用这个小技巧。
 
-(works with every scoreboard plugin which supports PlaceholderAPI)
+（适用于支持 PlaceholderAPI 的所有记分板插件）
 
 {% tabs %}
-{% tab title="Before" %}
+{% tab title="之前" %}
 ​
 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-legacy-files/o/assets%2F-M28TcKgSDvuFN510qye%2F-MhOfUmIRJYMhFZM2AQy%2F-MhOgJ6DpHjDR8dc9NYc%2Fimmagine.png?alt=media&#x26;token=1a5efcc3-27a5-49b4-80c9-c98ebcb197d2" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
-{% tab title="After" %}
+{% tab title="之后" %}
 ​\\
 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-legacy-files/o/assets%2F-M28TcKgSDvuFN510qye%2F-MhOfUmIRJYMhFZM2AQy%2F-MhOg9VxfKvE2ZGZ3QE6%2Fimmagine.png?alt=media&#x26;token=c4ee2fd0-2aa9-46e2-a8dd-0025dcc64f7e" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
+### 如何隐藏背景
 
-### How to hide the background
-
-You just have to add `%img_offset_-500%` in front of <mark style="color:yellow;">**each line**</mark> of your scoreboard configuration, <mark style="color:yellow;">even in empty lines!</mark>
+你只需要在记分板配置的<mark style="color:yellow;">**每一行**</mark>前面添加 `%img_offset_-500%`，<mark style="color:yellow;">即使是在空行上也要添加!</mark>
 
 {% hint style="danger" %}
-#### Warning!
+#### 警告！
 
-Not compatible with special attributes of **AnimatedScoreboard** like these and similar!
+与 **AnimatedScoreboard** 的特殊属性不兼容，例如这些和类似的：
 
 `<health full=&4 half=&c empty=&f update=5>❤</health>`
 
@@ -51,17 +50,17 @@ Not compatible with special attributes of **AnimatedScoreboard** like these and 
 
 `<stay ticks=100>&lAnimated Scoreboard</stay>`
 
-<mark style="color:red;">Please do not ask me for support</mark>, I cannot fix this, I'm not the author of **AnimatedScoreboard**.
+<mark style="color:red;">请不要向我寻求支持</mark>，我无法修复这个问题，我不是 **AnimatedScoreboard** 的作者。
 
-If you want to use `<stay>` you have to put the `%img_offset_-500%` after the first `>`.\
-Example:
+如果你想使用 `<stay>`，你需要把 `%img_offset_-500%` 放在第一个 `>` 之后。\
+示例：
 
 `<stay ticks=100>%img_offset_-500%&lAnimated Scoreboard</stay>`
 {% endhint %}
 
 <details>
 
-<summary>&#x3C;--- Click here to get the example YML configuration file</summary>
+<summary>&#x3C;--- 点击这里获取示例 YML 配置文件</summary>
 
 {% code title="defaultscoreboard.yml" %}
 ```yaml
