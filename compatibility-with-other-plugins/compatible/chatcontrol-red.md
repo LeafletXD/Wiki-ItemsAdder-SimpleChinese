@@ -9,7 +9,7 @@ ItemsAdder 表情符号兼容性：
 
 如果你想为你的频道创建一个图形化的前缀，并在聊天中显示，你可以按照以下教程操作。
 
-![展示ARCADE频道前缀的示例](../../.gitbook/assets/image\(94\).png)
+![展示ARCADE频道前缀的示例](../../.gitbook/assets/image\_\(94\).png)
 
 你只需在格式配置中设置这个（例如在ChatControl Red的`format/arcade.yml`文件中）：
 
