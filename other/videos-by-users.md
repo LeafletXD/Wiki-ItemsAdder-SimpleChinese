@@ -1,6 +1,6 @@
-# 📹 Videos by users
+# 📹 视频教程
 
-## Showcases
+## 展示
 
 {% embed url="https://www.youtube.com/watch?v=YXD2KGHDY-U" %}
 
