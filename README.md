@@ -29,7 +29,15 @@
 * [Website](https://www.matteodev.it/)
 * [Steam Developer Page](https://store.steampowered.com/developer/LoneDev/)
 * [Discord](https://discord.gg/4dfnpUK)
-* 由[小命Leaflet](https://github.com/LeafletXD)自行汉化，部分汉化使用了原翻译者[xiaobailoves](https://github.com/xiaobailoves/Simplechinese_Wiki-ItemsAdder)的翻译（由于原翻译已过时和原翻译者们不再更新，因此我决定自行接手翻译工作，向原翻译者们表示致敬与感谢）
+
+### ☕ 汉化
+
+由[小命Leaflet](https://github.com/LeafletXD)自行汉化。\
+部分汉化使用了原翻译者[xiaobailoves](https://github.com/xiaobailoves/Simplechinese_Wiki-ItemsAdder)的翻译。\
+由于原翻译已过时和原翻译者们不再更新，因此我决定自行接手翻译工作，向原翻译者们表示致敬与感谢！o7\
+若有翻译问题请联系我的QQ：[2532846822](https://qm.qq.com/q/rw4C88s2ti)，我会第一时间改正。
+
+* 小命Leaflet /翻译者
 
 ## 购买
 
