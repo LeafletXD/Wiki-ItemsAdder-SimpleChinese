@@ -1,4 +1,4 @@
-# Table of contents
+# 目录
 
 * [👋 欢迎](README.md)
 * [❤️ 赞助作者](https://donate.devs.beer)
