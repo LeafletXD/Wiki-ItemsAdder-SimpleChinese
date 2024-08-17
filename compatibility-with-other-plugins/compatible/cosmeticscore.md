@@ -10,14 +10,14 @@
 
 {% embed url="https://polymart.org/resource/cosmeticscore-launch-discount.2879" %}
 
-### Tutorials
+### 指南
 
 {% embed url="https://cosmeticscore.devs.beer/adding-content" %}
 
-## Adding compatibility
+## **添加兼容性**
 
 {% hint style="warning" %}
-Update ItemsAdder to 3.3.0+
+请将 ItemsAdder 更新到 3.3.0 或更高版本
 {% endhint %}
 
 {% embed url="https://cosmeticscore.devs.beer/first-install/install-base-resourcepack/itemsadder" %}
