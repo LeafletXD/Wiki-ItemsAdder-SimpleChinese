@@ -9,3 +9,5 @@ _**与XX插件兼容吗？**_
 * 自定义合成台行为和配方的插件
 * [LootChest](https://www.spigotmc.org/resources/lootchest.61564/) 可能会导致一些 [问题](https://github.com/LoneDev6/ItemsAdder/issues/15#issuecomment-512990849)
 * 目前**不兼容**那些使用不同面来创建自定义纹理的 **插件** 和世界生成器。未来我会添加兼容性。
+
+(注：建议先查看作者是否有在插件帖子或是插件的维基百科里写该插件兼容什么、支持什么）
