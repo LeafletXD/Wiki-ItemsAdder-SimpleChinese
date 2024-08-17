@@ -1,81 +1,81 @@
 ---
-description: How to install the plugin
+描述：如何安装插件
 ---
 
-# ⚙ First install
+# ⚙ 首次安装
 
 {% hint style="info" %}
-**You should follow** this first configuration **on** your **test server** on your PC to **avoid mistakes** and too many restarts.. players don't like when the server is offline.\
-You can upload files to your real server after you finished here.
+**您应该先在** 电脑上的 **测试服务器** 上按照此配置 **以避免错误** 和过多的重启... 玩家不喜欢服务器一直离线。\
+完成此步骤后，您可以将文件上传到实际服务器。
 {% endhint %}
 
 {% hint style="danger" %}
-**Make sure** that all of your plugins and server software are up to date!
+**确保** 所有插件和服务器软件都是最新的！
 {% endhint %}
 
-## Step 1 - Installing the plugin and libraries
+## 步骤 1 - 安装插件和库
 
-* stop the server
-* install [**ProtocolLib**](https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/)
-* install [**LoneLibs**](https://www.spigotmc.org/resources/lonelibs.75974/)
-* put `ItemsAdder.jar` file inside your plugins folder
-* start the server
-* let ItemsAdder finish loading **everything**
+* 使用 `/stop` 关闭服务器
+* 安装 [**ProtocolLib**](https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/)
+* 安装 [**LoneLibs**](https://www.spigotmc.org/resources/lonelibs.75974/)
+* 将 `ItemsAdder.jar` 文件放入plugins文件夹中
+* 启动服务器
+* 让 ItemsAdder 完成加载 **所有内容**
 
-First step is done.
+第一步完成。
 
 {% hint style="warning" %}
-Now you must complete **step 2** to configure the resourcepack (don't worry it's not very hard).\
-<mark style="color:red;">**DO NOT SKIP!**</mark>
+现在你需要完成 **步骤 2** 来配置资源包（不要担心，只要跟随步骤一个一个设置就不会有事，不会很难）。\
+<mark style="color:red;">**不要跳过！**</mark>
 {% endhint %}
 
-## Step 2 - Resourcepack first installation
+## 步骤 2 - 资源包首次安装
 
 {% hint style="warning" %}
-This step is important, the plugin <mark style="color:red;">**WILL NOT WORK**</mark> if you won't complete this step!
+该步骤极其重要，如果你不完成该步骤，插件将 <mark style="color:red;">**不会正常工作！**</mark>
 {% endhint %}
 
-Before using the plugin you have to decide the resourcepack hosting method. \
-Click down here to decide an hosting method for the resourcepack (best method: `self-host`).
+在使用插件之前，你需要决定资源包的托管方式。\
+点击下方以选择资源包的托管方法（最佳方法：`self-host` 自托管）。
 
 {% content-ref url="plugin-usage/resourcepack-hosting/" %}
-[resourcepack-hosting](plugin-usage/resourcepack-hosting/)
+[资源包托管](plugin-usage/resourcepack-hosting/)
 {% endcontent-ref %}
 
-## Step 3 - (optional) Add official ItemsAdder custom content
+## 步骤 3 - （可选）添加官方 ItemsAdder 自定义内容
 
 ![](.gitbook/assets/items\_showcase\_gif.apng)
 
-**ItemsAdder** comes with a lot of custom content already created for you.\
-It's not automatically included in the downloaded plugin because some people might not want every item/feature automatically added into their server.
+**ItemsAdder** 附带了大量为您预先创建的自定义内容。\
+这些内容不会自动包含在下载的插件中，因为有些人可能不希望每个物品/功能都自动添加到他们的服务器中。
 
-### Default pack (optional)
+### 默认包 (可选)
 
 ![](<.gitbook/assets/image (47).png>)
 
-* Download the latest version of the **DefaultPack**: [DOWNLOAD](https://github.com/ItemsAdder/DefaultPack/releases/latest)
-* Extract the content into the `ItemAdder` folder and overwrite the files if asked
-* Run the `/iazip` command (and follow your [hosting method](plugin-usage/resourcepack-hosting/) if you're not using **self-host**).
+* 下载最新版本的 **DefaultPack**：[下载](https://github.com/ItemsAdder/DefaultPack/releases/latest)
+* 将内容解压到 `ItemAdder` 文件夹中，并在提示时覆盖文件
+* 运行 `/iazip` 命令（如果您不是使用 **self-host**，请按照您的 [资源包托管](plugin-usage/resourcepack-hosting/) 进行操作）。
 
-### Other pack (optional)
+### 其他包 (可选)
 
 ![](<.gitbook/assets/image (50).png>)
 
-* if you want you can download the **OtherPacks** which adds even more content: [DOWNLOAD](https://github.com/ItemsAdder/OtherPacks/releases/latest)
-* extract the content into the `ItemAdder` folder and overwrite the files if asked
-* run the `/iazip` command (and follow your [hosting method](plugin-usage/resourcepack-hosting/) if you're not using **self-host**).
+* 如果需要，您可以下载 **OtherPacks**，它提供了更多内容：[下载](https://github.com/ItemsAdder/OtherPacks/releases/latest)
+* 将内容解压到 `ItemAdder` 文件夹中，并在提示时覆盖文件
+* 运行 `/iazip` 命令（如果您不是使用 **self-host**，请按照您的 [资源包托管](plugin-usage/resourcepack-hosting/) 进行操作）。
 
-If you're on 1.17 or lower you have to change the ores generation:
+如果您使用的是 1.17 或更低版本，您需要更改矿石生成设置：
 
-* Open these files and set `enabled: true`.
+* 打开以下文件并将 `enabled` 设置为 `true`：
   * `contents\iaalchemy\configs\worlds_populators_old.yml`
   * `contents\iasurvival\configs\ores\configs\worlds_populators_old.yml`
-* Open these files and set `enabled: false`.
+* 打开以下文件并将 `enabled` 设置为 `false`：
   * `contents\iaalchemy\configs\worlds_populators_1_18.yml`
   * `contents\iasurvival\configs\ores\configs\worlds_populators_1_18.yml`
 
-### Removing default items (optional)
+### 删除默认物品 (可选)
 
 {% content-ref url="faq/removing-default-stuff/" %}
-[removing-default-stuff](faq/removing-default-stuff/)
+[删除ItemsAdder的默认物品](faq/removing-default-stuff/)
 {% endcontent-ref %}
