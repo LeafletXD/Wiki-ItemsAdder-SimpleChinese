@@ -1,15 +1,15 @@
-# Bulk colorize images
+# 批量上色图像
 
-## Changing color of multiple PNG files in one click
+## 一键改变多个PNG图像的颜色
 
-Use this very nice tool.\
-It allows you to colorize multiple PNG images without having to manually edit each of them.
+使用这个非常好的工具\
+它允许您为多个PNG图像上色，而无需打开每一个图像进行编辑
 
 {% embed url="https://pinetools.com/bulk-batch-colorize-image" %}
 
-## Example
+## 事例
 
-With this tool I managed to color my custom HUD automatically without opening each file manually with an image editor.
+有了这个工具，我成功地自动为我的自定义HUD修改颜色了，从而无需打开每一个图像进行编辑
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
