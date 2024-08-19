@@ -13,7 +13,7 @@
 **确保** 所有插件和服务器软件都是最新的！
 {% endhint %}
 
-## 步骤 1 - 安装插件和库
+## 步骤 1 - 安装插件和库（libraries）
 
 * 使用 `/stop` 关闭服务器
 * 安装 [**ProtocolLib**](https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/)
