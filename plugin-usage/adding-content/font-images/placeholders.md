@@ -26,4 +26,3 @@ To actually show make your font image show up you just have to write down its na
 :blank_menu:
 :my_emoji:
 ```
-
