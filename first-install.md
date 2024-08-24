@@ -10,7 +10,11 @@
 {% endhint %}
 
 {% hint style="danger" %}
-**确保** 所有插件和服务器软件都是最新的！
+**确保** 所有插件和服务器软件都是最新的！\
+
+**检查** 您正在下载的ItemsAdder的版本!\
+<mark style="color:red;">**V3 版本只可用于 1.20.4或更低的版本**</mark>
+<mark style="color:red;">**V4 版本只可用于 1.20.6或更高的版本**</mark>
 {% endhint %}
 
 ## 步骤 1 - 安装插件和库（libraries）
