@@ -1,8 +1,8 @@
 # ShopGUI+
 
-## [Download here](https://www.spigotmc.org/resources/shopgui-1-7-1-17.6515)
+## [点击下载](https://www.spigotmc.org/resources/shopgui-1-7-1-17.6515)
 
-## How to use ItemsAdder items inside the plugin
+## 如何在插件中使用 ItemsAdder 的物品
 
 {% embed url="https://docs.brcdev.net/#/shopgui/shops-items-setup?id=itemsadder" %}
 
@@ -15,4 +15,3 @@
         sellPrice: 25
         slot: 0
 ```
-
