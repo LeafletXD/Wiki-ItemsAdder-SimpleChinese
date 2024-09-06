@@ -1,4 +1,4 @@
-# Events
+# 事件
 
 ### ItemsAdderLoadDataEvent
 
@@ -7,14 +7,14 @@ package dev.lone.itemsadder.api.Events;
 public class ItemsAdderLoadDataEvent extends Event
 ```
 
-This event is called when ItemsAdder has loaded all its stuff correctly (also on `/iareload`)\
-Listen to this in order to wait all items, images etc. are available for your plugin.
+当 ItemsAdder 正确加载所有内容时会触发此事件（同样适用于 `/iareload`）。\
+监听此事件，以确保所有物品、图像等内容已可供您的插件使用。
 
-### ResourcePackSendEvent - [docs](https://github.com/LoneDev6/API-ItemsAdder/blob/master/src/main/java/dev/lone/itemsadder/api/Events/ResourcePackSendEvent.java)
+### ResourcePackSendEvent - [文档](https://github.com/LoneDev6/API-ItemsAdder/blob/master/src/main/java/dev/lone/itemsadder/api/Events/ResourcePackSendEvent.java)
 
-Event triggered when the server sends a resourcepack to the client. \
-This event includes **URL**, **hash** and also contains info if **it's** an **ItemsAdder resourcepack** or **another plugin** resourcepack.
+当服务器向客户端发送资源包时触发的事件。\
+该事件包括**URL**、**哈希值**，并且包含有关是否为**ItemsAdder 资源包**或**其他插件资源包**的信息。
 
-## Other events
+## 其他事件
 
 {% embed url="https://github.com/LoneDev6/API-ItemsAdder/tree/master/src/main/java/dev/lone/itemsadder/api/Events" %}
