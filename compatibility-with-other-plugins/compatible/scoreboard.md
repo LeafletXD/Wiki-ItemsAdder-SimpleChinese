@@ -11,7 +11,7 @@
 
 ## 字体图像
 
-您可以在 **scoreboard** 中使用 [font_images](../../plugin-usage/adding-content/font-images/)（表情符号和符号）。
+您可以在 **scoreboard** 中使用 [字符图像](../../plugin-usage/adding-content/font-images/)（表情符号和符号）。
 
 ### 示例
 
