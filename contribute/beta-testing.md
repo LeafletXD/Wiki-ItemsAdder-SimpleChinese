@@ -1,14 +1,14 @@
 ---
-description: Access beta versions of the plugin
+描述：参与使用插件的测试版本
 ---
 
-# 🧪 Beta testing
+# 🧪 Beta测试
 
-If you own **ItemsAdder** you can apply to become part of the **beta testing** team.\
-Feel free to apply, but only if you own ItemsAdder (bought from Spigot, BuiltByBit or Polymart).\
-I will approve each issued request if it satisfies the development needs.
+如果您拥有**ItemsAdder**，您可以申请成为 **Beta测试** 团队的一员\
+请随意申请，但前提是您拥有ItemsAdder（从Spigot、BuiltByBit或Polymart购买）\
+如果满足开发需求，我将批准每个发出的请求。
 
-Thanks everyone :smile: This will help me to make the plugin more stable and better.
+谢谢大家 :smile: 这将帮助我使插件更稳定、更好。
 
 {% embed url="https://forms.gle/CALtSZJ5v3mtNGPa9" %}
 
