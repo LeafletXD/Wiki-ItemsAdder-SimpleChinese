@@ -1,7 +1,7 @@
 # DimensionsAddons
 
-## [Download here](https://www.spigotmc.org/resources/83982/)
+## [点击下载](https://www.spigotmc.org/resources/83982/)
 
-More info:
+更多详情:
 
 {% embed url="https://astaspastagam.gitbook.io/first-steps/" %}
