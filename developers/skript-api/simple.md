@@ -1,8 +1,8 @@
-# Simple
+# 简单示例
 
-## Examples
+## 示例
 
-### Command: give custom item
+### 命令：给予自定义物品
 
 ```yaml
 command /iaskriptgetitem <text> [<number=1>]:
@@ -10,28 +10,28 @@ command /iaskriptgetitem <text> [<number=1>]:
     set {%player%.item} to null
     set {%player%.item} to customitem arg 1
     if {%player%.item} is null:
-      message "Custom item %arg 1% not found"
+      message "自定义物品 %arg 1% 未找到"
     else:
       give player arg 2 of {%player%.item}
-      message "Obtained custom item %arg 1%"
+      message "获得了自定义物品 %arg 1%"
 ```
 
-### Command: is holding custom item
+### 命令：检查是否持有自定义物品
 
 ```yaml
 command /iaskriptiscustomitem:
   trigger:
     if player's tool is a customitem:
-      message "it's a custom item"
+      message "这是一个自定义物品"
     else:
-      message "it's not a custom item"
+      message "这不是一个自定义物品"
 ```
 
-### FontImage (emojis, GUIs etc.)
+### FontImage（表情符号、GUI 等）
 
 ```yaml
 command /emojitest:
-	trigger:
-		set {iconConfirm} to fontimage "twitteremojis:confirm"
-		message "Good: %{iconConfirm}%"
+  trigger:
+    set {iconConfirm} to fontimage "twitteremojis:confirm"
+    message "Good：%{iconConfirm}%"
 ```
