@@ -21,5 +21,5 @@ blocks:
 {% hint style="info" %}
 应用此更改后，你将无法创建类型为 REAL 的 ItemsAdder 方块。
 
-其他 ItemsAdder 自定义块类型仍然可以正常使用（例如 REAL\_NOTE）。
+其他 ItemsAdder 自定义方块类型仍然可以正常使用（例如 REAL\_NOTE）。
 {% endhint %}
