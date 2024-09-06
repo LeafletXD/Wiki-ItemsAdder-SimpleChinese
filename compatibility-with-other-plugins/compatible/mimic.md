@@ -1,34 +1,34 @@
 # Mimic
 
-## [Download here](https://github.com/EndlessCodeGroup/Mimic)
+## [点击下载](https://github.com/EndlessCodeGroup/Mimic)
 
 {% hint style="warning" %}
-You need **ItemsAdder** 2.5.3+ and **Mimic** 0.6.3+.
+您需要 **ItemsAdder** 2.5.3及以上的版本 和 **Mimic** 0.6.3及以上的版本。
 {% endhint %}
 
-## How to get an ItemsAdder item using Mimic
+## 如何使用 Mimic 获取 ItemsAdder 物品
 
-To get a custom item using **Mimic** you have to use this command:
+要使用 **Mimic** 获取自定义物品，您需要使用以下命令：
 
 `/mimic items give <player> ia:<item id>`
 
-### Example
+### 示例
 
 `/mimic items give LoneDev ia:itemsadder:ruby_sword`
 
 {% hint style="warning" %}
-It's important to add `ia:` in front of the ItemsAdder custom item name or Mimic won't recognize it.
+请务必在 ItemsAdder 自定义物品名称前添加 `ia:`，否则 Mimic 将无法识别。
 
-In this case `itemsadder:ruby_sword` must be specified as `ia:itemsadder:ruby_sword`.
+在此示例中，`itemsadder:ruby_sword` 必须指定为 `ia:itemsadder:ruby_sword`。
 {% endhint %}
 
-## Compare an item
+## 比较物品
 
-You can even compare an item using Mimic.
+您还可以使用 Mimic 比较物品。
 
-### Example
+### 示例
 
-Hold a `Ruby Sword` in hand and run this command.
+将 `Ruby Sword` 持在手中，然后运行以下命令：
 
 `/mimic items compare ia:itemsadder:ruby_sword`
 
