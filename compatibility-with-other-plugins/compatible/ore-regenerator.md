@@ -1,10 +1,8 @@
 ---
 description: >-
-  Create block regeneration on your server with customizable delays, replace
-  materials, and regions.
+  在您的服务器上创建再生方块，支持自定义延迟、替换材料和区域。
 ---
 
 # Ore Regenerator
 
-## [Download here](https://www.spigotmc.org/resources/71743/)
-
+## [点击下载](https://www.spigotmc.org/resources/71743/)
