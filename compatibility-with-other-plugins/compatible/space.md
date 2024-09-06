@@ -1,23 +1,21 @@
 # Space
 
-## [Download here](https://www.spigotmc.org/resources/space.59572/)
+## [点击下载](https://www.spigotmc.org/resources/space.59572/)
 
-## Adding compatibility
+## 添加兼容性
 
 {% hint style="warning" %}
-Update ItemsAdder to 3.3.0+
+将 ItemsAdder 更新到 3.3.0+ 版本
 {% endhint %}
 
-Create a new folder: `ItemsAdder/contents/space/resourcepack/`
+1. 创建一个新文件夹：`ItemsAdder/contents/space/resourcepack/`
+2. 将 Space 插件的资源包解压到该文件夹中，路径应类似于：\
+   `ItemsAdder/contents/space/resourcepack/assets/...`
+3. 运行 `/iazip`，并按照 [资源包托管教程](../../plugin-usage/resourcepack-hosting/) 进行操作。
 
-Extract the Space plugin resourcepack in the previous folder so that you have something like that:\
-`ItemsAdder/contents/space/resourcepack/assets/...`
+## 已知问题
 
-Then run `/iazip` and follow the [hosting tutorial](../../plugin-usage/resourcepack-hosting/).
+### 粒子效果问题
 
-## Known issues
-
-### Particles problems
-
-After you've merged the resourcepacks you will notice double particles from blocks.\
-This is normal and I can't fix it for now, it's because of how Space plugin creases blocks models (in the wrong way).
+在合并资源包后，你可能会注意到来自方块的双重粒子效果。\
+这是正常的，目前无法修复，因为 Space 插件生成的方块模型方式有误。
