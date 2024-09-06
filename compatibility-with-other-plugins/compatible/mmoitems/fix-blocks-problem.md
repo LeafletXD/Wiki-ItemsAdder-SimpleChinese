@@ -1,10 +1,10 @@
 # 修复方块问题
 
 {% hint style="warning" %}
-**MMOItems** 块与 **ItemsAdder** 不兼容，反之亦然。
+**MMOItems** 方块与 **ItemsAdder** 不兼容，反之亦然。
 {% endhint %}
 
-## 如何使用 MMOItems 块？
+## 如何使用 MMOItems 方块？
 
 你需要打开 **ItemsAdder** 的 `config.yml` 文件并禁用 **REAL** 方块（蘑菇）。
 
