@@ -1,21 +1,20 @@
 # Iris
 
-## [Download here](https://www.spigotmc.org/resources/iris-world-gen-custom-biome-colors.84586/)
+## [点击下载](https://www.spigotmc.org/resources/iris-world-gen-custom-biome-colors.84586/)
 
-## Enabling compatibility
+## 启用兼容性
 
-### Step 1
+### 步骤 1
 
-Install [ItemsAdderBlocksInjector](https://www.spigotmc.org/resources/itemsadderblocksinjector.102078/) and <mark style="color:red;">don't remove it after installation!</mark>
+安装 [ItemsAdderBlocksInjector](https://www.spigotmc.org/resources/itemsadderblocksinjector.102078/)，并 <mark style="color:red;">安装后不要将其删除！</mark>
 
-### Step 2
+### 步骤 2
 
-Create your Iris world (follow their guides) and use your ItemsAdder custom blocks IDs as you would do with vanilla blocks.
+创建您的 Iris 世界（按照他们的指南进行），并像使用原版方块一样使用您的 ItemsAdder 自定义方块 ID。
 
-\
-For example open this file of the `overworld` pack: `plugins\Iris\packs\overworld\biomes\mountain\mountain.json`
+例如，打开 `overworld` 包中的这个文件：`plugins\Iris\packs\overworld\biomes\mountain\mountain.json`
 
-Then edit the layers settings to use a custom block, in this example the custom **Amethyst Block**:
+然后编辑图层设置以使用自定义块，例如自定义 **锡石矿石**：
 
 ```json
 "layers": [
@@ -31,13 +30,13 @@ Then edit the layers settings to use a custom block, in this example the custom 
     },
 ```
 
-This will generate a similar result:
+这将生成类似于以下的效果：
 
 ![](<../../.gitbook/assets/image (49).png>)
 
 ![](<../../.gitbook/assets/image (96).png>)
 
-## Compatibility issues
+## 兼容性问题
 
-* FastAsyncWorldEdit will stop working, there is nothing I can do about that.
-* WorldEdit `//undo` and `//copy` won't work with the custom blocks placed by `Iris`, they would be reverted back to `NOTE_BLOCK` (or `mushroom`, `TRIPWIRE`, `CHORUS_PLANT`)
+* FastAsyncWorldEdit 将无法工作，这点我无能为力。
+* WorldEdit 的 `//undo` 和 `//copy` 将无法与 `Iris` 放置的自定义块一起使用，这些块会被还原为 `NOTE_BLOCK`（或 `mushroom`、`TRIPWIRE`、`CHORUS_PLANT`）。
