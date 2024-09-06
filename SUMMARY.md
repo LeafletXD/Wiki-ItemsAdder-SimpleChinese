@@ -183,6 +183,7 @@
     * [📈 家具尺寸](plugin-usage/adding-content/furniture/furniture-size.md)
     * [⚡ 家具执行动作](plugin-usage/adding-content/furniture/furniture-execute-actions.md)
     * [🪟 透明家具](plugin-usage/adding-content/furniture/transparent-furniture.md)
+    * [🆗 家具权限](plugin-usage/adding-content/furniture/furniture-permissions.md)
   * [🛢️ 燃料](plugin-usage/adding-content/fuel.md)
   * [🪖 盔甲](plugin-usage/adding-content/armors/README.md)
     * [创建一个简单的盔甲](plugin-usage/adding-content/armors/custom-simple-armor.md)
