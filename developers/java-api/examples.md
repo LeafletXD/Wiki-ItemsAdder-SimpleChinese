@@ -1,12 +1,12 @@
-# Usage
+# 用法
 
-## Getting the API
+## 获取 API
 
 {% embed url="https://github.com/LoneDev6/API-ItemsAdder" %}
 
-## Custom items - [docs](https://github.com/LoneDev6/API-ItemsAdder/blob/master/src/main/java/dev/lone/itemsadder/api/CustomStack.java)
+## 自定义物品 - [文档](https://github.com/LoneDev6/API-ItemsAdder/blob/master/src/main/java/dev/lone/itemsadder/api/CustomStack.java)
 
-#### Getting a custom item of any type (block, item, hat, food etc.) by id or namespace:id
+#### 通过 ID 或 `namespace:id` 获取任意类型的自定义物品（方块、物品、帽子、食物等）
 
 ```java
 CustomStack stack = CustomStack.getInstance("your_item")
@@ -16,107 +16,107 @@ if(stack != null)
 }
 else
 {
-    //no custom item found with that id
+    // 没有找到对应 id 的自定义物品
 }
 ```
 
-#### Checking if a custom item exists
+#### 检查自定义物品是否存在
 
 ```java
 CustomStack.isInRegistry("your_item")
 ```
 
-#### Obtaining the CustomStack from a Bukkit ItemStack
+#### 通过 Bukkit `ItemStack` 获取 `CustomStack`
 
 ```java
 CustomStack stack = CustomStack.byItemStack(myItemStack);
 
-if(stack != null) // It's a custom item!
+if(stack != null) // 是自定义物品！
 {
-    stack.setUsages(5) // For example set usages
+    stack.setUsages(5) // 例如设置使用次数
     // ...
 }
-else // It's not a custom item!
+else // 不是自定义物品！
 {
      // ...
 }
 ```
 
-## Custom Blocks - [docs](https://github.com/LoneDev6/API-ItemsAdder/blob/master/src/main/java/dev/lone/itemsadder/api/CustomBlock.java)
+## 自定义方块 - [文档](https://github.com/LoneDev6/API-ItemsAdder/blob/master/src/main/java/dev/lone/itemsadder/api/CustomBlock.java)
 
-#### Check if a custom block exists
+#### 检查自定义方块是否存在
 
 ```java
 CustomBlock.isInRegistry("your_item")
 ```
 
-#### Check if world block is a custom blocks
+#### 检查世界中的方块是否为自定义方块
 
 ```java
 CustomBlock customBlock = CustomBlock.byAlreadyPlaced(block);
 if(customBlock != null)
 {
-    // Custom block, do your own stuff here
+    // 自定义方块，可以在这里执行自定义操作
 }
 else
 {
-    // Not a custom block
+    // 不是自定义方块
 }
 ```
 
-#### Place custom block
+#### 放置自定义方块
 
 ```java
 CustomBlock customBlock = CustomBlock.getInstance("ruby_ore");
-if(customBlock != null) //not needed if you're sure the blocks exists.
+if(customBlock != null) // 如果确定方块存在则不需要检查。
 {
     customBlock.place(location);
 }
 else
 {
-    // Custom block not found in ItemsAdder configurations!
+    // 在 ItemsAdder 配置中找不到自定义方块！
 }
 ```
 
-## Custom entity - [docs](https://github.com/LoneDev6/API-ItemsAdder/blob/master/src/main/java/dev/lone/itemsadder/api/CustomEntity.java)
+## 自定义实体 - [文档](https://github.com/LoneDev6/API-ItemsAdder/blob/master/src/main/java/dev/lone/itemsadder/api/CustomEntity.java)
 
-#### Spawn a custom mob by id or namespace:id
+#### 通过 ID 或 `namespace:id` 生成自定义生物
 
 ```java
 CustomEntity customEntity = CustomEntity.spawn("your_item", location)
 if(customEntity != null)
 {
-    // Custom entity spawned
+    // 自定义生物生成成功
     
-    // Example: print the namespaced id in console
+    // 例如：在控制台打印命名空间 ID
     System.out.println(customEntity.getNamespacedID());
 }
 else
 {
-    // Custom entity not found in ItemsAdder configurations!
+    // 在 ItemsAdder 配置中找不到自定义生物！
 }
 ```
 
-### Get custom entity by an already spawned Bukkit entity
+### 通过已生成的 Bukkit 实体获取自定义实体
 
 ```java
 CustomEntity customEntity = CustomEntity.byAlreadySpawned(entity)
 if(customEntity != null)
 {
-    // It's a custom entity
+    // 是自定义实体
     
-    // Example: print the namespaced id in console
+    // 例如：在控制台打印命名空间 ID
     System.out.println(customEntity.getNamespacedID());
 }
 else
 {
-    // This Bukkit entity is not a custom entity!
+    // 这个 Bukkit 实体不是自定义实体！
 }
 ```
 
-## Liquids API
+## 液体 API
 
-Please also install [IALiquids ](https://www.spigotmc.org/resources/84386)addon to have some test liquids
+请安装 [IALiquids](https://www.spigotmc.org/resources/84386) 插件以测试液体功能
 
 ```java
 @EventHandler
@@ -133,9 +133,9 @@ void interact(PlayerInteractEvent e)
 }
 ```
 
-## Changing HUD values with API
+## 使用 API 修改 HUD 值
 
-### Setting a float value in a Frames Hud
+### 设置 Frames HUD 中的浮点值
 
 ```java
 PlayerHudsHolderWrapper playerHudsHolderWrapper = new PlayerHudsHolderWrapper(playerObject);
@@ -143,7 +143,7 @@ PlayerQuantityHudWrapper hud = new PlayerQuantityHudWrapper(playerHudsHolderWrap
 hud.setFloatValue(1f);
 ```
 
-### Making a HUD visible.
+### 设置 HUD 可见
 
 ```java
 PlayerHudsHolderWrapper playerHudsHolderWrapper = new PlayerHudsHolderWrapper(playerObject);
@@ -151,40 +151,40 @@ PlayerQuantityHudWrapper hud = new PlayerQuantityHudWrapper(playerHudsHolderWrap
 hud.setVisible(true);
 ```
 
-## Old stuff:
+## 旧版功能：
 
-### Custom mobs <mark style="color:orange;">(old)</mark> - [docs](https://github.com/LoneDev6/API-ItemsAdder/blob/master/src/main/java/dev/lone/itemsadder/api/CustomMob.java)
+### 自定义生物 <mark style="color:orange;">(旧版)</mark> - [文档](https://github.com/LoneDev6/API-ItemsAdder/blob/master/src/main/java/dev/lone/itemsadder/api/CustomMob.java)
 
-#### Spawn a custom mob by id or namespace:id
+#### 通过 ID 或 `namespace:id` 生成自定义生物
 
 ```java
 CustomMob customMob = CustomMob.spawn("your_item", location)
 if(customMob != null)
 {
-    //spawned the custom mob
+    // 自定义生物生成成功
     
-    //example, print the display name in console
+    // 例如：在控制台打印显示名称
     System.out.println(customMob.getName());
 }
 else
 {
-    //no custom mob found with that id
+    // 找不到对应 id 的自定义生物
 }
 ```
 
-#### Get custom mob by mob already spawned in the world
+#### 获取已经生成的自定义生物
 
 ```java
 CustomMob customMob = CustomMob.byAlreadySpawned(entity)
 if(customMob != null)
 {
-    //it's a custom mob
+    // 是自定义生物
     
-    //example, print the display name in console
+    // 例如：在控制台打印显示名称
     System.out.println(customMob.getName());
 }
 else
 {
-    //this mob is not a custom mob
+    // 这个生物不是自定义生物
 }
 ```
