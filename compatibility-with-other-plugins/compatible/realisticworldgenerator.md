@@ -1,22 +1,22 @@
 # RealisticWorldGenerator
 
-## [Download here](https://www.spigotmc.org/resources/realisticworldgenerator-1-8-8-1-16-x.15905/)
+## [点击下载](https://www.spigotmc.org/resources/realisticworldgenerator-1-8-8-1-16-x.15905/)
 
-## Compatibility
+## 兼容性
 
-* biomes
-* ores
-* schematics (RWG schematics)
+* 生物群系
+* 矿物
+* 结构 (RWG 结构)
 
 {% hint style="warning" %}
-This works only on ItemsAdder 2.5.2+ and RealisticWorldGenerator 4.30+
+此功能仅适用于 ItemsAdder 2.5.2+ 和 RealisticWorldGenerator 4.30+ 版本
 {% endhint %}
 
-## Warnings
+## 注意事项
 
 {% hint style="danger" %}
-Do not use custom blocks as base ores blocks. This will cause too much lag.\
-Keep using vanilla blocks for this purpose.
+不要将自定义块用作基础矿石方块。这会导致严重的延迟。\
+请继续使用原版方块来作为基础矿石方块。
 {% endhint %}
 
 {% code title="ores.yml" %}
@@ -28,25 +28,25 @@ ores:
     type: 1
     enabled: true
   base:
-    block: ia:itemsadder:ruby_block # <---- DO NOT DO THIS!
+    block: ia:itemsadder:ruby_block # <---- 不要这样做！！！
 ```
 {% endcode %}
 
 {% hint style="success" %}
-Use custom blocks only for:
+仅在以下情况下使用自定义方块：
 
-* surfaces
-* ores
-* structures (schematics)
+* 表面
+* 矿石
+* 结构（结构图）
 {% endhint %}
 
-## How to use custom blocks
+## 如何使用自定义块
 
-For example let's create a biome which has ruby\_block as top layer.
+例如，让我们创建一个具有 `ruby_block` 作为顶层的生物群系。
 
-Open the `biomes.yml` file of your **RealisticWorldGenerator** world configuration folder.
+打开 **RealisticWorldGenerator** 世界配置文件夹中的 `biomes.yml` 文件。
 
-Decide a biome (for example `plains`) and add this as first layer.
+选择一个生物群系（例如 `plains`），并将以下内容添加为第一层。
 
 {% code title="biomes.yml" %}
 ```yaml
@@ -61,7 +61,7 @@ plains:
 ```
 {% endcode %}
 
-In this example I also modified the `settings.yml` file of this world to make sure only a biome is generated, to find my custom blocks easier.
+在这个例子中，我还修改了这个世界的 `settings.yml` 文件，以确保只生成一个生物群系，便于找到我的自定义方块。
 
 {% code title="settings.yml" %}
 ```yaml
@@ -72,11 +72,8 @@ one_biome:
 ```
 {% endcode %}
 
-### This is the final result
+### 最终效果
 
-This is a world with a custom surface
+这是一个自定义表面的世界
 
 ![](<../../.gitbook/assets/image (41) (1).png>)
-
-
-
