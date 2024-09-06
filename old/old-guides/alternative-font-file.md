@@ -1,63 +1,63 @@
 ---
-description: Use another .json file for the auto generated font images
+描述：使用另一种 .json 文件生成自定义字体图像
 ---
 
-# Alternative font file
+# 替代字体文件
 
-## How to use the alternative custom font file
+## 如何使用替代自定义字体文件
 
 {% hint style="danger" %}
-**This feature is unstable and was removed from the plugin. Not available anymore.**
+**此功能不稳定，已从插件中移除。目前无法使用。**
 {% endhint %}
 
-**ItemsAdder** generates the json file for your custom **font\_images**, in some cases you prefer to have a separate file instead of append the images into the `default.json`.
+**ItemsAdder** 为您的自定义 **font_images** 生成 json 文件，在某些情况下，您可能希望使用一个单独的文件，而不是将图像追加到 `default.json` 中。
 
-ItemsAdder (if configured) will generate the **font\_images** inside a new file: `assets/minecraft/font/custom.json` instead of `default.json`.
+如果配置了，ItemsAdder 将在新文件 `assets/minecraft/font/custom.json` 中生成 **font_images**，而不是在 `default.json` 中。
 
-## Why having a separate custom font file?
+## 为什么要使用单独的自定义字体文件？
 
-This will make your font\_images have a completely separate font you can use on-demand without overwriting the main font characters.
+这样可以使您的 font_images 使用完全独立的字体，而不会覆盖主字体字符。
 
-Minecraft 1.16+ has the native custom font feature which allows to specify the font name on each message (using json).
+Minecraft 1.16+ 具有原生自定义字体功能，可以在每条消息中指定字体名称（使用 json）。
 
-For example you can write this command `/tellraw @a [{"text":"Test message!","font":"default"},"\n",{"text":"Test message!","font":"alt"}]`
+例如，您可以输入以下命令 `/tellraw @a [{"text":"测试消息！","font":"default"},"\n",{"text":"测试消息！","font":"alt"}]`
 
-This command will write the first text with font `default` and the second text with font `alt` (in this case it's included into the game).
+该命令将使用 `default` 字体显示第一条文本，使用 `alt` 字体显示第二条文本（在这种情况下，它已包含在游戏中）。
 
 ![](../../.gitbook/assets/image\_\(153\).png)
 
-ItemsAdder custom font will be named `custom`, so in this case you will have to use the attribute `"font":"custom"`.
+ItemsAdder 自定义字体将命名为 `custom`，因此在这种情况下，您需要使用属性 `"font":"custom"`。
 
-## Downsides and upsides
+## 缺点和优点
 
 {% hint style="danger" %}
-* emojis won't be shown in the `/e` autocomplete command, instead placeholders will be shown ([screenshot](https://i.imgur.com/Im9AXae.png))
-* not being able to copy and paste unicode characters everywhere anymore, you have to rely on `:XXX:` and `%img_XXX%` placeholders or on the vanilla json components specifying the `font` attribute (check the [example](alternative-font-file.md#why-having-a-separate-custom-font-file))
-* only available on Minecraft 1.16+
-* some settings in **config.yml** won't work anymore:
+* 表情符号不会显示在 `/e` 自动完成命令中，而是显示占位符 ([截图](https://i.imgur.com/Im9AXae.png))
+* 无法在任何地方复制和粘贴 Unicode 字符，您必须依赖 `:XXX:` 和 `%img_XXX%` 占位符，或者在原版 json 组件中指定 `font` 属性（请查看 [示例](alternative-font-file.md#why-having-a-separate-custom-font-file)）
+* 仅在 Minecraft 1.16+ 上可用
+* **config.yml** 中的一些设置将不再有效：
   * `font_images.command`
   * `font_images.scoreboard-teams`
   * `font_images.vault-prefix-suffix`
-  * `font_images.player-display-name` <mark style="color:orange;">(works only on Paper)</mark>
-  * images in broadcast message <mark style="color:orange;">(works only on Paper)</mark>
-  * signs, books <mark style="color:orange;">(works only on Paper)</mark>
+  * `font_images.player-display-name` <mark style="color:orange;">（仅在 Paper 上有效）</mark>
+  * 广播消息中的图像 <mark style="color:orange;">（仅在 Paper 上有效）</mark>
+  * 牌子、书 <mark style="color:orange;">（仅在 Paper 上有效）</mark>
 {% endhint %}
 
 {% hint style="success" %}
-* Players can set `Force Unicode: On` and the **font\_images** will show anyway because they are using another font, not the default one
+* 玩家可以设置 `Force Unicode: On`，**font_images** 仍会显示，因为它们使用的是另一种字体，而不是默认字体。
 {% endhint %}
 
-## Should I use this feature?
+## 我应该使用此功能吗？
 
 {% hint style="danger" %}
-**This feature is unstable.**
+**此功能不稳定**
 
-I'd avoid using it since it has too many downsides, but I'll leave you the decision since some servers may need to separate the custom images from the default font.
+我建议避免使用此功能，因为它有太多缺点。但我会让您自行决定，因为某些服务器可能需要将自定义图像与默认字体分开。
 {% endhint %}
 
-## How to enable the feature?
+## 如何启用此功能？
 
-You have to enable this option in `config.yml` and run `/iazip`:
+您需要在 `config.yml` 中启用此选项并运行 `/iazip`：
 
 {% code title="config.yml" %}
 ```yaml
