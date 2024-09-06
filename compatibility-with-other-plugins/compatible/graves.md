@@ -1,28 +1,28 @@
 # Graves
 
-## [Download here](https://www.spigotmc.org/resources/graves.74208/)
+## [点击下载](https://www.spigotmc.org/resources/graves.74208/)
 
-## How to add compatibility?
+## 如何添加兼容性？
 
-Enable the compatibility
+启用兼容性设置
 
 ```yaml
 itemsadder: # https://www.spigotmc.org/resources/itemsadder.73355/
-  enabled: true # Should ItemsAdder integration be enabled.
+  enabled: true # 是否启用 ItemsAdder 集成
 ```
 
-Edit the default option. You can also customize the items if needed (make sure they are of the correct type, use furniture in furniture and use block in the block property).
+编辑默认选项。如果需要，您也可以自定义物品（确保它们是正确的类型，使用家具时在家具属性中，使用块时在块属性中）。
 
 ```yaml
   ##############
   # ItemsAdder #
   ##############
-  # The option requires ItemsAdder, you must have this installed to use models.
+  # 该选项需要 ItemsAdder，您必须安装它才能使用模型。
   itemsadder:
     furniture:
-      enabled: true # Should we use ItemsAdder Furniture?
-      name: "itemsadder:mysterious_stone" # Furniture name.
+      enabled: true # 是否使用 ItemsAdder 家具？
+      name: "itemsadder:mysterious_stone" # 家具名称
     block:
-      enabled: true # Should we use ItemsAdder Blocks?
-      name: "itemsadder:nice_stone" # Block name
+      enabled: true # 是否使用 ItemsAdder 块？
+      name: "itemsadder:nice_stone" # 块名称
 ```
