@@ -1,65 +1,65 @@
 ---
-description: Worldguard flags list
+描述： Worldguard flags列表
 ---
 
 # WorldGuard
 
-## Flags list
+## Flags列表
 
 ### ia-furniture-sit
 
-This flags allows your players to sit on furnitures or not (furnitures with `furniture_sit` [behaviour](../../plugin-usage/adding-content/item-properties/behaviours.md))
+此标志允许玩家坐在家具上（家具具有 `furniture_sit` [行为](../../plugin-usage/adding-content/item-properties/behaviours.md)）。
 
 ### ia-campfire-item-add
 
-Allow user to move item to campfire
+允许用户将物品移到篝火上。
 
 ### ia-campfire-item-remove
 
-Allow user to remove item from campfire
+允许用户从篝火上移除物品。
 
 ### ia-vehicle-place
 
-Allow user to place vehicles in the region
+允许用户在区域内放置车辆。
 
 ### ia-vehicle-remove
 
-Allow user to remove ANY vehicle in the region
+允许用户移除区域内的任何车辆。
 
 ### ia-vehicle-personal-remove
 
-allow user to remove only their own vehicles in the region
+允许用户仅移除他们自己的车辆。
 
 ### ia-vehicle-sit
 
-Allow user to sit on any vehicle in the region
+允许用户坐在区域内的任何车辆上。
 
 ### ia-vehicle-personal-sit
 
-allow user to sit only on their own vehicles in the region
+允许用户仅坐在他们自己的车辆上。
 
 ### ia-trade-machine-use
 
-allow user to use trade machines
+允许用户使用交易机器。
 
 ### ia-placed-block-interact
 
-allow user to trigger placed\_block.interact events
+允许用户触发 `placed_block.interact` 事件。
 
 ### ia-placed-armorstand-interact
 
-allow user to trigger placed\_armorstand.interact events
+允许用户触发 `placed_armorstand.interact` 事件。
 
 {% hint style="info" %}
-Set **ia-vehicle-sit** to Deny and **ia-vehicle-personal-sit** to Allow to let your players only sit on personal vehicles
+将 **ia-vehicle-sit** 设置为拒绝，将 **ia-vehicle-personal-sit** 设置为允许，以便玩家只能坐在个人车辆上。
 {% endhint %}
 
-## Common issues
+## 常见问题
 
 {% hint style="warning" %}
-If your users **cannot sit** on **furnitures** even if you set the correct flag:
+如果用户即使设置了正确的标志仍然**不能坐**在**家具**上：
 
-* check if you are using the `__global__ region` as your main region (the one on which you applied the furniture flag). If yes, please create a new region. global region is known to give some issues with some plugins flags.
-* check if you set the `build` or `passthrough` flag. \
-  Remember that these flags must not be changed, you should keep the default value (unselected, gray text)
+* 检查是否正在使用 `__global__` 区域作为主要区域（即应用了家具标志的区域）。如果是，请创建一个新的区域。全局区域已知在某些插件Flags上存在问题。
+* 检查是否设置了 `build` 或 `passthrough` Flags。\
+  请记住，这些Flags不能更改，应保持默认值（未选中，灰色文本）。
 {% endhint %}
