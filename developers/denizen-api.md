@@ -1,31 +1,33 @@
 # 📓 Denizen API
 
 {% hint style="warning" %}
-Needs ItemsAdder 3.2.4+
+需要 ItemsAdder 3.2.4 及以上版本
 {% endhint %}
 
-## Download latest build
+## 下载最新构建版本
 
 {% embed url="https://ci.citizensnpcs.co/job/Denizen/" %}
 
-## Features
+## 功能
 
-<pre class="language-yaml"><code class="lang-yaml"><strong># Check if item is a custom item
-</strong><strong>player.item_in_hand.is_ia_item
-</strong># Check if item is a custom block
+```yaml
+# 检查物品是否为自定义物品
+player.item_in_hand.is_ia_item
+# 检查物品是否为自定义方块
 player.item_in_hand.is_ia_block
-# Get item namespaced id
+# 获取物品的命名空间 ID
 player.item_in_hand.ia_namespaced_id
 
-# Place a custom block.
-# Syntax set_custom_block [&#x3C;location>|...] [&#x3C;namespaced_id>]
-set_custom_block &#x3C;context.location> ruby_block 
-# Check if block is a custom block
+# 放置自定义方块。
+# 语法 set_custom_block [<location>|...] [<namespaced_id>]
+set_custom_block <context.location> ruby_block 
+# 检查方块是否为自定义方块
 context.location.is_ia_block
-# Get block namespaced id
-context.location.ia_namespaced_id</code></pre>
+# 获取方块的命名空间 ID
+context.location.ia_namespaced_id
+```
 
-## Examples
+## 示例
 
 ```yaml
 my_world_script:
@@ -34,9 +36,9 @@ my_world_script:
         after player left clicks block:
             - narrate " "
             - if <player.item_in_hand.is_ia_block>:
-                - narrate "Left click item is a custom block! <&6><player.item_in_hand.ia_namespaced_id>"
+                - narrate "左击物品是一个自定义方块！ <&6><player.item_in_hand.ia_namespaced_id>"
             - else:
-                - narrate "Left click item is NOT a custom block! <&7><player.item_in_hand.material>"
+                - narrate "左击物品不是自定义方块！ <&7><player.item_in_hand.material>"
             - narrate " "
         after player right clicks block:
             - if <player.is_sneaking>:
@@ -44,13 +46,13 @@ my_world_script:
             - else:
                 - narrate " "
                 - if <player.item_in_hand.is_ia_item>:
-                    - narrate "Right click item is a custom item! <&6><player.item_in_hand.ia_namespaced_id>"
+                    - narrate "右击物品是一个自定义物品！ <&6><player.item_in_hand.ia_namespaced_id>"
                 - else:
-                    - narrate "Right click item is NOT a custom item! <&7><player.item_in_hand.material>"
+                    - narrate "右击物品不是自定义物品！ <&7><player.item_in_hand.material>"
 
                 - if <context.location.is_ia_block>:
-                    - narrate "Interacted block is a custom block! <&6><context.location.ia_namespaced_id>"
+                    - narrate "交互的方块是一个自定义方块！ <&6><context.location.ia_namespaced_id>"
                 - else:
-                    - narrate "Interacted block is NOT a custom block!"
+                    - narrate "交互的方块不是自定义方块！"
                 - narrate " "
 ```
