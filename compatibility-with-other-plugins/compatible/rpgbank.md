@@ -1,12 +1,12 @@
 # RPGBank
 
-## [Download here](https://www.spigotmc.org/resources/%E2%9C%85must-have%E2%9C%85-rpgbank-store-your-items-exp-and-money-using-villagers-npcs-and-custom-gui.29139/)
+## [点击下载](https://www.spigotmc.org/resources/%E2%9C%85must-have%E2%9C%85-rpgbank-store-your-items-exp-and-money-using-villagers-npcs-and-custom-gui.29139/)
 
 {% hint style="warning" %}
-You must have the [DefaultPack](../../first-install.md#default-pack-optional) installed!
+您必须安装 [DefaultPack](../../first-install.md#default-pack-optional)！
 {% endhint %}
 
-You can change GUI icons and use ItemsAdder icons to achieve this:
+您可以更改 GUI 图标，并使用 ItemsAdder 图标来实现这一点：
 
 ![](<../../.gitbook/assets/image (13) (1).png>)
 
@@ -24,10 +24,9 @@ You can change GUI icons and use ItemsAdder icons to achieve this:
 ```
 {% endtab %}
 
-{% tab title="language file" %}
+{% tab title="语言文件" %}
 ```yaml
 account-title: :offset_-16::blank_menu::offset_-176:&0{player}
 ```
 {% endtab %}
 {% endtabs %}
-
