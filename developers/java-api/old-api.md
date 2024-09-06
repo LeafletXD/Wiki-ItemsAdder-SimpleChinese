@@ -1,80 +1,79 @@
-# API Utilities
+# API工具
 
-## API Utilities
+## API工具
 
-These are some static utilities to fast get some information.
+这些是一些静态工具，用于快速获取信息。
 
 {% hint style="warning" %}
-Note that these static utility methods are for lazy usage, you should use the other API classes instead.
+请注意，这些静态实用方法适用于快速使用，建议使用其他 API 类来进行操作。
 {% endhint %}
 
 ```java
-// Check if itemsadder finished loading its items and if they are available
-// Normally you should use ItemsAdderFirstLoadEvent instead.
-// but sometimes you might also need to check this programmatically.
+// 检查 ItemsAdder 是否已完成加载其所有物品以及是否可用
+// 通常你应该使用 ItemsAdderFirstLoadEvent。
+// 但有时你可能也需要通过编程方式检查这个。
 public static boolean areItemsLoaded()
 
-//Checks if an item is a custom item made with ItemsAdder
+// 检查一个物品是否是使用 ItemsAdder 制作的自定义物品
 public static boolean isCustomItem(ItemStack itemStack)
 public static boolean isCustomItem(String customItemName)
 
-//returns the ItemStack of a custom block in world
+// 返回世界中自定义方块的 ItemStack
 public static ItemStack getCustomBlock(Block block)
 
-//check if an entity in world is a furniture
+// 检查世界中的实体是否是家具
 public static boolean isFurniture(Entity entity)
 
-//check if an ItemStack is a specific custom item 
-//(example: check if a pickaxe is 'amethyst_pickaxe')
+// 检查 ItemStack 是否是特定的自定义物品
+// （例如：检查一个镐是否是 'amethyst_pickaxe'）
 public static boolean matchCustomItemName(ItemStack itemStack, String customItemName)
 ```
 
-## Old API methods
+## 旧 API 方法
 
 {% hint style="warning" %}
-This is the old API, it's still available and working fine.
+这是旧版 API，仍然可用且正常工作。
 {% endhint %}
 
 ```java
-//Get an ItemsAdder custom item by its name in config
+// 根据配置中的名称获取 ItemsAdder 自定义物品
 public static ItemStack getCustomItem(String nameInConfig)
 
-//Spawns a block made with ItemsAdder specifying the itemstack 
-//(obtain it with getCustomItem)
+// 使用 ItemStack 生成一个 ItemsAdder 制作的方块
+// （通过 getCustomItem 获取）
 public static void placeCustomBlock(Location location, ItemStack customBlock)
 public static void placeCustomBlock(Location location, ItemStack customBlock, boolean lightweight)
 
-//get custom block loots
+// 获取自定义方块的掉落物品
 public static List<ItemStack> getCustomBlockLoot(Block block, ItemStack tool, boolean includeSelfBlock)
 
-//Check if a block in the world is a custom block made with ItemsAdder
+// 检查世界中的方块是否是使用 ItemsAdder 制作的自定义方块
 public static boolean isCustomBlock(Block block)
 
-//plants custom seed like a normal player would do
+// 像正常玩家一样种植自定义种子
 public static void placeCustomCrop(Location location, ItemStack seed)
 
-//check if block is custom planted crop with custom seed
+// 检查方块是否是使用自定义种子种植的自定义作物
 public static boolean isCustomCrop(Block block)
 
-//get custom seed of custom crop
+// 获取自定义作物的自定义种子名称
 public static String getCustomSeedNameFromCrop(Block block)
 
-//get name of the item in config (ex: 'ruby_pickaxe')
+// 获取配置中物品的名称（例如：'ruby_pickaxe'）
 public static String getCustomItemName(ItemStack itemStack)
 
-//get name of config where the item is declared (ex: 'items/swords')
+// 获取声明该物品的配置文件名称（例如：'items/swords'）
 public static String getCustomItemFileName(ItemStack itemStack)
 
-//gets usages remaining of this item (-999 if it has no usages specified = infinite)
+// 获取该物品剩余的使用次数（如果没有指定使用次数，则为 -999 = 无限）
 public static int getCustomItemUsages(ItemStack itemStack)
 
-//set custom item durability (also works with vanilla items and with
-//custom items with default vanilla durability)
+// 设置自定义物品的耐久度（也适用于原版物品及具有默认原版耐久度的自定义物品）
 public static ItemStack setCustomItemDurability(ItemStack item, int durability)
 
-//get custom durability
+// 获取自定义耐久度
 public static int getCustomItemDurability(ItemStack itemStack)
 
-//get max custom durability 
+// 获取最大自定义耐久度
 public static int getCustomItemMaxDurability(ItemStack itemStack)
 ```
