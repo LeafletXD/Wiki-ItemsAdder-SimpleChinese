@@ -1,18 +1,18 @@
-# HUDs, GUIs, images and more
+# HUDs、GUIs、图像及更多
 
-To see how to use HUDs and GUIs API (Font Images) you can check my examples.
+要了解如何使用 HUDs 和 GUIs API（字体图像），可以查看我的示例。
 
 ## GUIs
 
 {% embed url="https://github.com/LoneDev6/API-ItemsAdder-Example-GUI" %}
 
-## Huds
+## HUDs
 
 {% embed url="https://github.com/LoneDev6/RPGhuds" %}
 
 {% embed url="https://github.com/LoneDev6/API-ItemsAdder-Example-ServerMonitor" %}
 
-### Access mana bar value example
+### 访问魔法值条的示例
 
 ```java
 PlayerHudsHolderWrapper huds = new PlayerHudsHolderWrapper(player);
@@ -21,22 +21,22 @@ PlayerQuantityHudWrapper manaHud =
 if(manaHud.exists())
   manaHud.setFloatValue(2.0f);
 else
-  System.out.println("Error: mana not found, maybe it's disabled.");
+  System.out.println("错误：未找到魔法值条，可能已被禁用。");
 ```
 
 {% hint style="warning" %}
-### NOTE
+### 注意
 
-Make sure that you don't have the permission `ia.user.hud.bypass.api.*` or `setFloatValue` the code won't do anything.&#x20;
+确保你没有权限 `ia.user.hud.bypass.api.*`，否则 `setFloatValue` 方法将无效。
 {% endhint %}
 
-## FAQ
+## 常见问题解答
 
 {% content-ref url="../../plugin-usage/adding-content/font-images/common-errors.md" %}
 [common-errors.md](../../plugin-usage/adding-content/font-images/common-errors.md)
 {% endcontent-ref %}
 
-## Get Emoji or GUI character
+## 获取表情符号或 GUI 字符
 
 ```java
 new FontImageWrapper("twitteremojis:confirm").getString()
