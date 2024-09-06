@@ -1,97 +1,96 @@
 ---
-description: Terms and Conditions for IA
+描述：IA的条款和条件
 ---
 
-# ⛔ Legal
+# ⛔ 法律声明
 
-## 📝Terms Of Service
+## 📝 服务条款
 
 {% hint style="danger" %}
-Before Buying Remember:
+购买前请注意：
 
-* ⛔ If you have another plugin that uses a custom resource pack you have to know how to merge it with the ItemsAdder resource pack or disable the other plugin. A tutorial is available [here](../plugin-usage/merge-resourcepacks/).
-* ⛔ Before asking for support, please read the tutorials of this wiki.
-* ⛔ You must have some knowledge on how to create/manage/merge vanilla Minecraft resource packs as this plugin uses a custom-made and modified resource pack to show custom textures/models.\
-  Please if you have no knowledge about resource packs don't buy the plugin!
-* ⛔ It's impossible to write a complete list of compatible/incompatible plugins without testing every single plugin on the planet. If the plugin doesn't work with your server setup don't ask for a refund but [report it](tos.md#how-to-ask-for-support-properly) and I'll try to find a solution.
-* ⛔ [Not compatible with some plugins](https://itemsadder.devs.beer/compatibility-with-other-plugins/not-compatible)
+* ⛔ 如果你有其他插件使用了自定义资源包，你需要知道如何将其与ItemsAdder资源包合并，或者禁用其他插件。相关教程请参见 [这里](../plugin-usage/merge-resourcepacks/)。
+* ⛔ 在请求支持之前，请先阅读本维基的教程。
+* ⛔ 你需要具备一定的创建/管理/合并原版Minecraft资源包的知识，因为本插件使用了自定义的并修改过的资源包来展示自定义的纹理/模型。\
+  如果你对资源包没有了解，请不要购买此插件！
+* ⛔ 编写兼容/不兼容插件的完整列表是不可能的，除非对每一个插件都进行测试。如果插件与您的服务器设置不兼容，请不要要求退款，而是 [报告](tos.md#how-to-ask-for-support-properly) 问题，我会尝试找到解决方案。
+* ⛔ [与一些插件不兼容](https://itemsadder.devs.beer/compatibility-with-other-plugins/not-compatible)
 {% endhint %}
 
-### No Refunds¹
+### 不退款¹
 
-Refunds are typically at the seller's discretion and might be issued on particular cases.\
-Contact the seller using the forum or via email before opening an official dispute on the payment platform (PayPal, Stripe etc.).
+退款通常由卖方自行决定，并可能在特定情况下发放。\
+在通过支付平台（如PayPal、Stripe等）开启正式争议之前，请先通过论坛或电子邮件联系卖方。
 
-¹Except as required by applicable state law.
+¹除非适用的州法律要求退款。
 
-### Resource Pack
+### 资源包
 
-This plugin **requires** your **users** to **download** a **resource pack** (which is sent automatically on join) one time.\
-This Plugin may not work with plugins that are using server texture packs, [read this to see if your plugin is compatible](../compatibility-with-other-plugins/).\
-There is no Minecraft plugin which allows you to load custom assets without resource packs, it's not an ItemsAdder limitation, that's how the game works.
+本插件 **要求** 用户 **下载** 一个 **资源包**（在加入时会自动发送）一次。\
+本插件可能无法与使用服务器纹理包的插件兼容，[请查看此处以确定您的插件是否兼容](../compatibility-with-other-plugins/)。\
+没有任何Minecraft插件允许在不使用资源包的情况下加载自定义资源，这不是ItemsAdder的限制，而是游戏的工作方式。
 
-### Server Software
+### 服务器软件
 
-This plugin works with Spigot and Paper, I can't guarantee that the plugin will work on other Spigot forks.\
-By using other server software solutions you agree that the plugin may not work correctly.
+本插件与Spigot和Paper兼容，我不能保证插件在其他Spigot分支上也能正常工作。\
+使用其他服务器软件解决方案即表示您同意插件可能无法正常工作。
 
-### **Plugin Ownership**
+### **插件所有权**
 
-DO NOT DECOMPILE, RESELL, CRACK, OR REDISTRIBUTE THE PLUGIN.
+禁止**反编译、转售、破解或重新分发**插件。
 
-You may **only use** the **plugin** on a **server** that **you are** an **owner** of.\
-Bungeecord networks are also allowed.\
-You Must ensure that your staff won't leak the plugin and keep your JAR safe.\
+您**只能在**您**拥有的**服务器上使用**插件。\
+Bungeecord网络也是允许的。\
+您必须确保您的工作人员不会泄露插件，并妥善保管您的JAR文件。\
 \
-If you want to transfer your account or your license to another account you can do that by opening a ticket on my support [forum](https://forum.devs.beer/t/private-payment-issue).
+如果您想将账户或许可证转移到另一个账户，可以通过在我的支持 [论坛](https://forum.devs.beer/t/private-payment-issue) 上开票完成。
 
-### Making Addons
+### 制作附加组件
 
-You can sell **custom packs, textures, and configs...** make sure to read the [addons creation policy](tos.md#addon-creation-policy).
+您可以销售**自定义包、纹理和配置**，请确保阅读 [附加组件创建政策](tos.md#addon-creation-policy)。
 
-### Bugs & Issues & Support
+### 错误与问题与支持
 
-If you have any problems **do not leave one-star review** to gain my attention, it does the opposite.\
-I can fix bugs only if you report them in the right place.\
-Please be sure to read tutorials before asking for help.\
-Check the [FAQ](https://itemsadder.devs.beer/faq) for more info.\
-If you are contacting support please read the support policy.
+如果您遇到任何问题**请不要留下差评**以引起我的注意，这样会产生相反的效果。\
+我只能在您正确报告问题的情况下修复错误。\
+在寻求帮助之前，请确保阅读教程。\
+查看 [常见问题解答](https://itemsadder.devs.beer/faq) 以获取更多信息。\
+如果您联系支持，请阅读支持政策。
 
-### How to ask for support properly
+### 如何正确请求支持
 
 {% embed url="https://forum.devs.beer/d/16-getting-support" %}
 
-## 🆘 Support Policy
+## 🆘 支持政策
 
-#### No support for unverified accounts
+#### 未验证账户不提供支持
 
-All users must complete the verification process to ask for support.
+所有用户必须完成验证流程才能请求支持。
 
-#### No support in case of support abuse
+#### 支持滥用不予支持
 
-You are not allowed to open tickets or spam threads or tag the support team.\
-Any user that will spam support will be ignored.
+您不允许打开工单、垃圾信息线程或标记支持团队。\
+任何垃圾信息的用户将被忽略。
 
-#### No support if not enough information is provided
+#### 如果提供的信息不足，不提供支持
 
-It's your responsibility to give us all the information that is related to your issues.\
-We can't provide support if you won't give us any information.\
-You won't get support if your help request doesn't have enough information.
+您有责任提供与问题相关的所有信息。\
+如果您不提供任何信息，我们无法提供支持。\
+如果您的求助请求信息不足，您将无法获得支持。
 
-## 🖌️Addon Creation Policy
+## 🖌️ 附加组件创建政策
 
-You can sell **custom packs, textures, and configs...** compatible with this plugin or plugin presets. Thanks.\
-Also [a donation ](http://a.devs.beer/lonedevdonate)is appreciated if you earn a lot from them.
+您可以销售**与本插件兼容的自定义包、纹理和配置**或插件预设。感谢。\
+如果您从中获得了大量收益，也可以 [捐赠](http://a.devs.beer/lonedevdonate)。
 
-### Creating unique Addons
+### 创建独特的附加组件
 
-When creating add-ons you are not allowed to include any items from the default ItemsAdder pack\
-DO NOT INCLUDE MY DEFAULT ITEMS, MODELS, FONT IMAGES etc. IN YOUR ADDONS!\
-**PLEASE DO NOT INCLUDE MY DEFAULT ITEMS IN YOUR PACK!**\
-You can't resell my assets.
+在创建附加组件时，不允许包含任何来自默认ItemsAdder包的项目\
+**请勿在您的附加组件中包含我的默认项目、模型、字体图像等！**\
+您不能转售我的资产。
 
-### Copying Other Addons
+### 复制其他附加组件
 
-If your addon contains similar models, items, font images etc. to another addon your addon will be removed.\
-DON'T COPY OTHER CREATIONS.\
-Ask permission if you really want to use them, the creator might allow you.
+如果您的附加组件包含类似于其他附加组件的模型、项目、字体图像等，您的附加组件将被移除。\
+**不要复制其他作品。**\
+如果您确实想使用它们，请获得许可，创建者可能会允许您使用。
