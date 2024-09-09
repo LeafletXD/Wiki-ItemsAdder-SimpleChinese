@@ -1,36 +1,36 @@
-# ▯ rectangle character - old
+# ▯ 矩形字符 - 旧版
 
-## I see ▯ character after uninstalling Custom ESC addon
+## 卸载 Custom ESC 插件后我看到 ▯ 字符
 
 {% hint style="info" %}
-This happens only on ItemsAdder version older than 3.3.0.
+此问题仅发生在 ItemsAdder 3.3.0 之前的版本。
 {% endhint %}
 
 {% hint style="info" %}
-This is useful to uninstall [Custom ESC addon](https://www.spigotmc.org/resources/addon-custom-esc-menu-and-death-screen-for-itemsadder.88809/)
+卸载 [Custom ESC 插件](https://www.spigotmc.org/resources/addon-custom-esc-menu-and-death-screen-for-itemsadder.88809/) 时，此方法有用。
 {% endhint %}
 
-You have to delete this folder lang folder: `data/resource_pack/assets/minecraft/lang`
+您需要删除以下文件夹：`data/resource_pack/assets/minecraft/lang`
 
-Then run `/iazip` command.
+然后运行 `/iazip` 命令。
 
 ![](<../../.gitbook/assets/image\_(140) (1).png>)
 
-## 1.19 clients show ☐ instead of some font images
+## 1.19 客户端显示 ☐ 代替某些字体图像
 
-This is caused by this Minecraft bug I cannot fix: [https://bugs.mojang.com/browse/MC-253169](https://bugs.mojang.com/browse/MC-253169)
+这是由一个 Minecraft 无法修复的 bug 引起的：[https://bugs.mojang.com/browse/MC-253169](https://bugs.mojang.com/browse/MC-253169)
 
-Reddit thread: [https://www.reddit.com/r/Mojira/comments/vis77z/mc253169\_bug\_report\_marked\_as\_resolved\_but\_its/](https://www.reddit.com/r/Mojira/comments/vis77z/mc253169\_bug\_report\_marked\_as\_resolved\_but\_its/)
+Reddit 讨论帖：[https://www.reddit.com/r/Mojira/comments/vis77z/mc253169\_bug\_report\_marked\_as\_resolved\_but\_its/](https://www.reddit.com/r/Mojira/comments/vis77z/mc253169\_bug\_report\_marked\_as\_resolved\_but\_its/)
 
-### How to fix?
+### 如何修复？
 
-It's very easy: you just have to open your **CLIENT** log (not server log) and find the error about the font shows which what caused other font images to stop loading: [reading client log](../../faq/identify-why-textures-are-not-shown.md)
+修复很简单：您只需打开 **客户端** 日志（不是服务器日志），并找到显示字体加载错误的日志，该错误导致其他字体图像无法加载：[阅读客户端日志](../../faq/identify-why-textures-are-not-shown.md)。
 
-You have one or more misconfigured images, these are the cause of that problem.
+您可能有一个或多个配置错误的图像，这些图像是导致此问题的根本原因。
 
-#### Example of misconfigured png:
+#### 配置错误的 PNG 示例：
 
-This example pack has a PNG with `height` higher than the `y_position`.
+以下示例包包含一个 `height` 高于 `y_position` 的 PNG 图像。
 
 ```
 Unable to load font 'minecraft:default' in fonts.json in resourcepack: '260e803a4ce18a1662a5ff9c59f9d758ab1026bb'
