@@ -1,72 +1,71 @@
 ---
-description: How To Use External Hosting With IA
+描述：如何使用外部托管与 IA
 ---
 
-# 📤 Automatic external hosting
+# 📤 自动外部托管
 
 {% hint style="warning" %}
-## This guide is outdated and won't work anymore
+## 本指南已过时，将不再有效
 
-PloudOS is shutting down and I sadly have no control over it since I don't own the business.
+PloudOS 正在关闭，遗憾的是，我没有控制权，因为我不拥有该业务。
 
-Please use another hosting method instead since this one won't work anymore.
+请使用其他托管方法，因为这个将不再有效。
 {% endhint %}
 
-## Video tutorial
+## 视频教程
 
 {% embed url="https://www.youtube.com/watch?v=fOpB5-80coY" %}
 
-## What is automatic hosting?
+## 什么是自动托管？
 
-**ItemsAdder** allows you to automatically upload your resourcepack on a **free online service** with servers all over the world.
+**ItemsAdder** 允许您将资源包自动上传到 **全球各地的免费在线服务** 上。
 
-Thanks a lot to [PloudOS ](https://ploudos.com/it/)which provides me their platform to host your resourcepacks for free!
+非常感谢 [PloudOS](https://ploudos.com/it/) 提供他们的平台，让我可以免费托管您的资源包！
 
 {% embed url="https://ploudos.com/" %}
 
-## What are the advantages?
+## 有什么优势？
 
-The main advantage is download speed and availability.\
-This service allows your players to download the resourcepack very fast despite the country where they live (cloud based platform).
+主要优势是下载速度和可用性。\
+此服务允许您的玩家快速下载资源包，不论他们身处哪个国家（基于云的平台）。
 
-## I already use self-host, is this better?
+## 我已经使用自托管，这个更好吗？
 
-Depends.\
-It's better to use [self-host](../../plugin-usage/resourcepack-hosting/resourcepack-self-hosting.md) if you're working on the resourcepack and you have to continously run `/iazip`, to avoid losing time (read more [here](../../plugin-usage/resourcepack-hosting/tips-for-fastest-usage.md)).
+根据情况而定。\
+如果您正在处理资源包，并且需要不断运行 `/iazip`，以避免浪费时间，建议使用 [自托管](../../plugin-usage/resourcepack-hosting/resourcepack-self-hosting.md)（详细信息请阅读 [这里](../../plugin-usage/resourcepack-hosting/tips-for-fastest-usage.md)）。
 
-When you've finished working on the pack you can safely start using the `auto-external-host` feature.\
-This will make your server traffic lower as the resourcepack won't be hosted on your server anymore.
+当您完成资源包的工作后，可以安全地开始使用 `auto-external-host` 功能。\
+这将使您的服务器流量降低，因为资源包将不再托管在您的服务器上。
 
-If your playerbase is all from the same country you can stick with `self-host`.
+如果您的玩家群体都来自同一个国家，您可以继续使用 `自托管`。
 
-## How to use it?
+## 如何使用？
 
-You just have to:
+您只需：
 
-* enable `auto-external-host` in `config.yml`
-* disable all the other hosting methods.
+* 在 `config.yml` 中启用 `auto-external-host`
+* 禁用所有其他托管方法。
 
 ```yaml
 auto-external-host:
   enabled: true
 ```
 
-### Last step
+### 最后一步
 
-Run `/iazip` to **compress** the **resourcepack**.\
-The **plugin** will **upload it** online **automatically** (you will have to **accept the privacy policy** only the first time).
+运行 `/iazip` 以 **压缩** 资源包。\
+**插件** 将 **自动上传** 它到网上（您仅需在第一次使用时 **接受隐私政策**）。
 
-**You're done!** Nothing else to do, enjoy your **free automated resourcepack hosting**.
+**完成了！** 没有其他操作，享受您的 **免费自动化资源包托管**。
 
-## Will my resourcepack be available online to random people?
+## 我的资源包会被随机人群访问吗？
 
-2021-08-16:\
-Your resourcepack won't be indexed on Google and won't be published in a list of resourcepacks.\
-Only people who know the link can download the pack.
+2021-08-16：\
+您的资源包不会被 Google 索引，也不会出现在资源包列表中。\
+只有知道链接的人才能下载该包。
 
-## Continue installation if you need
+## 如果需要，请继续安装步骤
 
 {% content-ref url="../../first-install.md" %}
-[first-install.md](../../first-install.md)
+[首次安装](../../first-install.md)
 {% endcontent-ref %}
-
