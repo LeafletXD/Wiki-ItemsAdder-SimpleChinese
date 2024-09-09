@@ -267,7 +267,7 @@
     * [加载界面](plugin-usage/adding-content/optifine-only-features/loading-screen.md)
     * [盔甲材质 (旧版1.16及以下)](plugin-usage/adding-content/optifine-only-features/armor-textures-old-1.16-and-lower.md)
 * [📃 配方菜单](plugin-usage/ia.md)
-* [🗃️ 合并资源包合并资源包](plugin-usage/merge-resourcepacks/README.md)
+* [🗃️ 合并资源包](plugin-usage/merge-resourcepacks/README.md)
   * [🔧 手动编辑方块状态（blockstates）](plugin-usage/merge-resourcepacks/manual-editing-blockstates.md)
 * [📎 特殊变量](plugin-usage/placeholderapi.md)
 * [🔢 自定义玩家数据](plugin-usage/custom-playerstats.md)
