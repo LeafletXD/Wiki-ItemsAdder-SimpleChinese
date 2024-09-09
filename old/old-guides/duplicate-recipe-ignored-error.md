@@ -1,4 +1,4 @@
-# “Duplicate recipe ignored” 错误
+# “Duplicate recipe ignored” 报错
 
 如果您遇到类似的错误，请更新您的 Paper 或 Spigot 到 **最新版本**。即使是 1.14.4 版本，也不意味着它已经是最新的，您需要下载其 **最新版本**。
 
