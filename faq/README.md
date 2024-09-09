@@ -1,5 +1,5 @@
-# ❓ Frequently asked questions
+# ❓ 常见问题解答
 
-_**What type of items/weapons/bows exists? Can I create item X, weapon Y... can I add this attribute, can I, can I, can I??? Has the plugin this feature? Why do I have this problem and that problem?**_
+_**存在哪些类型的物品/武器/弓？我可以创建物品 X、武器 Y……我可以添加这个属性吗？可以吗，可以吗，可以吗？？？插件有这个功能吗？为什么我会遇到这个问题和那个问题？**_
 
-I wrote this wiki and its tutorials as clearly as possible, so please don't send me support requests for the first problem you encounter configuring the plugin or if you have questions. Please use the wiki and its search bar on the top before doing this. Thanks!
+我尽可能清晰地编写了本维基及其教程，因此请不要在遇到第一个配置插件的问题时向我发送支持请求，也不要直接提问。请在此之前使用维基及其顶部的搜索栏。谢谢！
