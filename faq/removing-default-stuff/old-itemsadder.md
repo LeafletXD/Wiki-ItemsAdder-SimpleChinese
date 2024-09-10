@@ -1,70 +1,70 @@
 ---
-description: ItemsAdder before 3.3.0
+描述: ItemsAdder 3.3.0 之前的版本
 ---
 
-# 🗑 Old ItemsAdder
+# 🗑 旧版 ItemsAdder
 
-## ItemsAdder before 3.3.0
+## ItemsAdder 3.3.0 之前的版本
 
 {% hint style="warning" %}
-Read here only if you're using ItemsAdder old resourcepack.\
-You can ignore this if you just bought the plugin at or after v3.2.0.
+仅当你使用的是旧版 ItemsAdder 资源包时阅读此内容。\
+如果你是在 v3.2.0 或之后购买的插件，可以忽略此内容。
 {% endhint %}
 
-## How can I remove all the items and default stuff?
+## 如何移除所有物品和默认内容？
 
 {% hint style="info" %}
-If you don't care about my default stuff and you only want to make your own items, blocks and other things it's easy!\
-Follow this tutorial.
+如果你不需要默认内容，只想创建自己的物品、方块和其他内容，这很简单！\
+请按照以下教程操作。
 {% endhint %}
 
 ### 1. Config.yml
 
-Open plugin `config.yml` file and set this to **false**.
+打开插件的 `config.yml` 文件，并将以下设置为 **false**。
 
 ```yaml
   extract-default-items: false
   extract-default-resources: false
 ```
 
-### 2. Delete the folders you don't need. Select from this list.
+### 2. 删除你不需要的文件夹。可以从以下列表中选择。
 
-#### Twitter emojis
+#### Twitter 表情符号
 
 `plugins\ItemsAdder\data\items_packs\twitteremojis`\
 `plugins\ItemsAdder\data\resource_pack\assets\twitteremojis`
 
-#### Magic craft example
+#### Magic Craft 示例
 
 `plugins\ItemsAdder\data\items_packs\magiccraft`\
 `plugins\ItemsAdder\data\resource_pack\assets\magiccraft`
 
-#### Minecraft Emojis
+#### Minecraft 表情符号
 
 `plugins\ItemsAdder\data\items_packs\mcemojis`\
 `plugins\ItemsAdder\data\resource_pack\assets\mcemojis`
 
-#### ItemsAdder items
+#### ItemsAdder 项目
 
 `plugins\ItemsAdder\data\items_packs\itemsadder`\
 `plugins\ItemsAdder\data\resource_pack\assets\itemsadder`
 
-#### Example items
+#### 示例项目
 
 `plugins\ItemsAdder\data\items_packs\example`\
 `plugins\ItemsAdder\data\resource_pack\assets\example`
 
-### 3. Finalizing the changes
+### 3. 完成更改
 
-Run this command: `/iacleancache items`
+运行以下命令：`/iacleancache items`
 
-Delete these folders:\
+删除这些文件夹：\
 `ItemsAdder\storage\cache\tmp\` `ItemsAdder\data\resource_pack\assets\minecraft\models\item\` `ItemsAdder\data\resource_pack\assets\minecraft\blockstates\`
 
-Then run `/iazip`
+然后运行 `/iazip`
 
 {% hint style="danger" %}
-#### Do not delete other folders which are not listed in the previous list.
+#### 请勿删除列表中未列出的其他文件夹。
 
-If you delete minecraft, mcguis or mcicons folders some parts of the plugin may stop working.
+如果你删除了 minecraft、mcguis 或 mcicons 文件夹，插件的某些部分可能会停止工作。
 {% endhint %}
