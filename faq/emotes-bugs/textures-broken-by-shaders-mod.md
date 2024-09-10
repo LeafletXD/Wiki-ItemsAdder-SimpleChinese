@@ -1,13 +1,13 @@
 ---
-description: Emotes textures look broken when using custom shaders mods (1.17+)
+描述：当使用自定义着色器模组时，动作存在纹理错误 (1.17+)
 ---
 
-# Textures broken by shaders mod
+# 纹理被着色器模组破坏
 
 {% hint style="warning" %}
-**Page moved!**
+**页面已移动！**
 
-The page has been moved and can now be found at the location linked below.
+该页面已移动，现在可以在下面的链接找到。
 {% endhint %}
 
 {% page-ref page="../broken-emote-textures.md" %}
