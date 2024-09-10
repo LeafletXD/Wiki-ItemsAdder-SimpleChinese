@@ -5,7 +5,7 @@
 * [⚙️ 首次安装](first-install.md)
 * [❓ 常见问题解答](faq/README.md)
   * [🗿 3.3 vs 3.2](faq/3-3-vs-3-2.md)
-  * [🔍 资源包加载不正确](faq/identify-why-textures-are-not-shown.md)
+  * [🔍 资源包未正确加载](faq/identify-why-textures-are-not-shown.md)
   * [⚠️ 插件没有正常加载！](faq/plugin-doesnt-work.md)
   * [🇹🇷 🇹🇷 土耳其 计算机报错](faq/turkish-computer-errors.md)
   * [👁️ 我在远处看到了清晰的纹理！](faq/i-see-crisp-textures-far-away.md)
