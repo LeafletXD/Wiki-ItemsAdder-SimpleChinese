@@ -1,18 +1,18 @@
 ---
-description: Players get kicked while installing the resourcepack
+描述：玩家在下载资源包时被踢
 ---
 
-# 🥾 Kick flight on join
+# 🥾 加入服务器时被踢出提示飞行
 
-## The kick problem
+## 问题描述
 
-Some servers may think you're flying while the resourcepack is installing, depends on where is your spawn location.
+某些服务器可能会在资源包安装期间认为你正在飞行，这取决于你的出生点位置。
 
-You may get this error: <mark style="color:red;">"Flying is not enabled on this server"</mark>, or getting kicked by an **anticheat**.
+你可能会收到如下错误：<mark style="color:red;">"Flying is not enabled on this server"</mark>，或者被 **反作弊** 系统踢下线。
 
-## How to fix?
+## 如何修复？
 
-Disable the `hide-hud` feature in the `config.yml` file of **ItemsAdder**.
+在 **ItemsAdder** 的 `config.yml` 文件中禁用 `hide-hud` 功能。
 
 ```yaml
   protect-player:
@@ -20,9 +20,9 @@ Disable the `hide-hud` feature in the `config.yml` file of **ItemsAdder**.
     hide-hud: false
 ```
 
-## Still having the issue
+## 仍然有问题
 
-Enable this option in `server.properties` file:
+在 `server.properties` 文件中启用以下选项：
 
 {% code title="server.properties" %}
 ```
@@ -30,5 +30,5 @@ allow-flight=true
 ```
 {% endcode %}
 
-This setting will not make your players to be able to fly, just Minecraft server will not kick them on flying without permission.\
-To prevent hacking because of this setting, is good to use an **AntiCheat**.
+此设置不会使玩家能够飞行，只是 Minecraft 服务器不会在没有权限的情况下踢出飞行的玩家。\
+为了防止由于此设置而导致的作弊，建议使用 **AntiCheat** 插件。
