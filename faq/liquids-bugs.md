@@ -1,64 +1,64 @@
-# 💧 Liquids bugs
+# 💧 液体Bugs
 
 {% hint style="warning" %}
-These are all Minecraft bugs I cannot fix.\
-This is how the game works.\
-Please do not report these issues.
+这些都是 Minecraft 的 bug，我无法修复。\
+这就是游戏的工作方式。\
+请不要报告这些问题。
 {% endhint %}
 
-### Custom liquid color mixed with water and vice versa
+### 自定义液体颜色与水混合，反之亦然
 
-Custom liquids are not totally colored sometimes, some parts still have vanilla water color.\
-This is a limitation of how the game works. I cannot fix this.
+自定义液体有时不会完全着色，一些部分仍然保留了原版水的颜色。\
+这是游戏工作方式的限制。我无法修复这个问题。
 
 <details>
 
-<summary>Technical reason</summary>
+<summary>技术原因</summary>
 
-Minecraft stores biomes of a chunk in an int\[1024]. 16x16x256=65536, that's way more than 1024. This means that it stores it in some kind of blobs (not sure myself which size they are), so changing specific blocks is sadly not possible. The colours also fade between biomes, so changing small "blobs" always looks weird and the blocks won't have the full colour.
+Minecraft 将一个区块的生物群系存储在 int\[1024] 中。16x16x256=65536，这比 1024 要多得多。这意味着它以某种形式的块（具体大小不清楚）进行存储，因此更改特定的方块是不可能的。颜色在生物群系之间也会渐变，因此更改小的“块”总是看起来很奇怪，方块不会有完整的颜色。
 
-Source: [https://www.spigotmc.org/threads/how-to-create-custom-biomes.512105/page-2#post-4243330](https://www.spigotmc.org/threads/how-to-create-custom-biomes.512105/page-2#post-4243330)
+来源：[https://www.spigotmc.org/threads/how-to-create-custom-biomes.512105/page-2#post-4243330](https://www.spigotmc.org/threads/how-to-create-custom-biomes.512105/page-2#post-4243330)
 
 </details>
 
 ![](<../.gitbook/assets/image\_(14) (1) (2) (3) (3) (4) (4) (5) (7) (8) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (13) (1) (1) (1) (11).png>)
 
-### I cannot see liquid color at all, even by placing it in a different location
+### 我完全看不到液体颜色，即使将其放在不同的位置
 
-You have to set the biome blend to `5x5` or lower.
+你需要将生物群系混合设置为 `5x5` 或更低。
 
-#### Bad
+#### 不好
 
 <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
-#### Good
+#### 好
 
 <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-## Liquids on top of each other show the same color
+## 液体在彼此之上显示相同的颜色
 
-You can do that only if your client is 1.18.1 or greater.\
-Old clients cannot see these colors correctly, it's a limitation of the game.
+只有在你的客户端是 1.18.1 或更高版本时你才能做到这一点。\
+旧版客户端无法正确显示这些颜色，这是游戏的限制。
 
 {% hint style="warning" %}
-If you place normal water (or if it's naturally generated) on the top or on the bottom of a custom liquid you will see it will have the custom liquid color.
+如果你在自定义液体的顶部或底部放置普通水（或自然生成的水），你会发现它会呈现自定义液体的颜色。
 
-**This is a Minecraft bug I cannot fix.**
+**这是 Minecraft 的 bug，我无法修复。**
 {% endhint %}
 
-#### Bad - 1.17.1 and lower
+#### 不好 - 1.17.1 及以下版本
 
 <figure><img src="../.gitbook/assets/water_bug_1.png" alt=""><figcaption></figcaption></figure>
 
-#### Good - 1.18.1 and greater
+#### 好 - 1.18.1 及以上版本
 
 <figure><img src="../.gitbook/assets/water_bug_2.png" alt=""><figcaption></figcaption></figure>
 
-## Liquids do not spread like water!
+## 液体不像水一样扩散！
 
 {% hint style="success" %}
-It's working as intended to avoid lag and glitches.\
-Use multiple liquid buckets to place a wider liquid area.
+这是为了避免延迟和故障而按预期工作的。\
+使用多个液体桶来放置更大的液体区域。
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/water_bug_3.png" alt=""><figcaption></figcaption></figure>
