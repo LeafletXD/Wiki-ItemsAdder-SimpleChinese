@@ -1,8 +1,8 @@
-# Can't write in chat and can't move
+# 无法在聊天栏打字和无法移动
 
-## Worldguard
+## WorldGuard
 
-If you experience bugged vehicles (get tipped under world and strange bugs like that) please open config.yml of WorldGuard and set this:
+如果你遇到载具出现问题（例如载具被卡在世界下方或出现其他奇怪的错误），请打开 WorldGuard 的 `config.yml` 文件并设置以下内容：
 
 ```
 block-plugin-spawning: false
@@ -11,7 +11,7 @@ block-plugin-spawning: false
 ## Towny
 
 {% hint style="warning" %}
-If you have problems with vehicles and you're using Towny plugin open Towny `config.yml` and remove Slime from here:
+如果你在使用 Towny 插件时遇到载具问题，请打开 Towny 的 `config.yml` 文件，并从以下配置中移除 **Slime**：
 {% endhint %}
 
 ```yaml
@@ -20,13 +20,13 @@ town_mob_removal_entities: Monster,Flying,Shulker,SkeletonHorse,ZombieHorse
 
 ## Mob Farm Manager
 
-If you own [Mob Farm Manager ](https://www.spigotmc.org/resources/mob-farm-manager-supports-1-7-10-up-to-1-16-hopper-support.15127/)plugin please make sure to check if you set any entity type **`SLIME`** rule, this may remove the slime which is part of the vehicle and cause this bug.
+如果你使用了 [Mob Farm Manager](https://www.spigotmc.org/resources/mob-farm-manager-supports-1-7-10-up-to-1-16-hopper-support.15127/) 插件，请检查是否为实体类型 **`SLIME`** 设置了任何规则，这可能会移除载具的一部分并导致出现该错误。
 
 ## Residence
 
-Use the command `/res set monsters t/r` inside a **Residence**.\
-I already contacted Residence developer and I hope[ they will fix this](https://github.com/Zrips/Residence/issues/469#issuecomment-801425643)
+在 **Residence** 内使用命令 `/res set monsters t/r`。\
+我已经联系了 Residence 的开发者，希望[他们能解决这个问题](https://github.com/Zrips/Residence/issues/469#issuecomment-801425643)。
 
-## Other mobs removal / grouping / merge plugins
+## 其他移除 / 分组 / 合并生物的插件
 
-Please remove any group/merge/removal feature on entity type **`SLIME`**.
+请移除对实体类型 **`SLIME`** 的任何分组、合并或移除功能。
