@@ -1,32 +1,34 @@
-# Create slabs, stairs, tridents, armors etc.
+# 能不能创建自定义半砖、楼梯、三叉戟、盔甲等
 
-### Slabs and stairs
+### 台阶和楼梯
 
 {% hint style="warning" %}
-You can't create solid custom slabs and stairs.\
-The problem is that Minecraft doesn't allow custom hitboxes for custom blocks.
+你无法创建实心的自定义台阶和楼梯。\
+问题在于 Minecraft 不允许为自定义方块设置自定义碰撞箱。
 {% endhint %}
 
-### Tridents
+（翻译者：其实你是否有注意过一个台阶叫做石化橡木台阶，只能指令获取，物品ID是petrified_oak_slab。你可以修改材质、语言名字再搭配自定义合成配方等等，不过就是这种东西得用镐子挖得快，硬度是石头，这只是我提供的思路，如果觉得太麻烦那还是不搞吧，可有可无 o^o）
+
+### 三叉戟
 
 {% hint style="warning" %}
-You can't create custom model for thrown tridents as it's a Minecraft bug which I can't fix: [https://bugs.mojang.com/browse/MC-155286](https://bugs.mojang.com/browse/MC-155286)
+你无法为投掷的三叉戟创建自定义模型，因为这是一个我无法修复的 Minecraft Bug：[https://bugs.mojang.com/browse/MC-155286](https://bugs.mojang.com/browse/MC-155286)
 {% endhint %}
 
-### Armors
+### 盔甲
 
 {% hint style="warning" %}
-Minecraft 1.16 (and lower) doesn't allow you to add custom textures / custom 3D models to armors in any way (you can but only with Optifine).\
-You can make them colored but you cannot change the texture.
+Minecraft 1.16（及以下版本）不允许以任何方式为盔甲添加自定义纹理或自定义 3D 模型（可以，但只能通过 Optifine）。\
+你可以改变盔甲的颜色，但不能改变其纹理。
 
-### **Custom textured armors 1.17**
+### **1.17 自定义纹理盔甲**
 
-To create custom textured armors in 1.17 you can follow the [tutorial here](../plugin-usage/adding-content/armors/custom-textured-armor.md) (No Optifine).
+要在 1.17 中创建自定义纹理盔甲，你可以按照[此处教程](../plugin-usage/adding-content/armors/custom-textured-armor.md)（无需 Optifine）进行操作。
 
-### **Custom textured armors 1.16 (and lower)**
+### **1.16（及以下版本）自定义纹理盔甲**
 
-ItemsAdder can automatically add custom armors to 1.16 version and lower, but only if the user has **Optifine** installed.\
-Just enable it in `config.yml`
+ItemsAdder 可以自动为 1.16 及以下版本添加自定义盔甲，但前提是用户安装了 **Optifine**。\
+只需在 `config.yml` 中启用该功能：
 
 ```yaml
 generate-custom-armors-textures:
@@ -34,8 +36,8 @@ generate-custom-armors-textures:
 ```
 {% endhint %}
 
-### Elytra
+### 鞘翅
 
 {% hint style="warning" %}
-Minecraft doesn't allow you in any way to add custom textures or custom 3D models to elytras.
+Minecraft 不允许以任何方式为鞘翅添加自定义纹理或自定义 3D 模型。
 {% endhint %}
