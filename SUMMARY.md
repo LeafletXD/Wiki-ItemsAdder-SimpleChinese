@@ -13,7 +13,7 @@
   * [👀 我看不到表情符号、GUI、HUD等](faq/i-cant-see-emoji-guis-huds-etc..md)
   * [▯ 矩形字符](faq/rectangle-character.md)
   * [配方书问题](faq/recipes-book-problems.md)
-  * [放置的头部纹理出现了故障](faq/placed-heads-texture-glitched.md)
+  * [放置的玩家头颅的纹理出现了故障](faq/placed-heads-texture-glitched.md)
   * [🗑️ 删除ItemsAdder的默认物品](faq/removing-default-stuff/README.md)
     * [🗑️ 最新的ItemsAdder](faq/removing-default-stuff/latest-itemsadder.md)
     * [🗑️ 过时的ItemsAdder](faq/removing-default-stuff/old-itemsadder.md)
