@@ -1,90 +1,90 @@
-# 🔍 Resourcepack is not loading correctly
+# 🔍 资源包未正确加载
 
 {% hint style="danger" %}
-### Please read this page CAREFULLY before asking for support.
+### 请在请求支持之前仔细阅读此页面。
 
-Most of the times the issue can be easily fixed by reading this page.
+大多数情况下，通过阅读此页面可以轻松解决问题。
 {% endhint %}
 
-## When to read this page
+## 何时阅读此页面
 
-* resourcepack not loaded at all
-* an error shown fullscreen when the player joins
-* black and purple texture is shown
-* your model doesn't load correctly
-* the pack failed to load
-* custom sounds don't play
-* infinite resourcepack loading glitch
+* 资源包根本没有加载
+* 玩家加入时显示全屏错误
+* 显示黑色和紫色纹理
+* 模型未正确加载
+* 资源包加载失败
+* 自定义声音未播放
+* 资源包一直加载故障
 
 {% hint style="warning" %}
 ### auto-external-host
 
-You have to change hosting method if you are still using `auto-external-host` because it doesn't work anymore.\
-[More info here](../old/old-guides/automatic-upload-hosting.md)
+如果你仍在使用 `auto-external-host`，需要更改托管方法，因为它已经不再有效。\
+[更多信息请点击这里](../old/old-guides/automatic-upload-hosting.md)
 {% endhint %}
 
-## How to read the SERVER logs
+## 如何阅读服务器日志
 
-* run the command `/iazip`
-* wait it to finish
-* read your server console or open the file `logs/latest.log` using any text editor (for example VSCode)
-* check if any error or warning was thrown and read them carefully, they contain useful information most of the times
+* 运行命令 `/iazip`
+* 等待完成
+* 阅读你的服务器控制台或使用任何文本编辑器（例如 VSCode）打开文件 `logs/latest.log`
+* 检查是否有错误或警告，并仔细阅读，它们通常包含有用的信息
 
-## How to read the CLIENT logs (not SERVER)
+## 如何阅读客户端日志（不是服务器日志）
 
 {% hint style="warning" %}
-Always use the Vanilla client when something is broken.\
-The log provided by the game will often be asked from support when necessary.\
-A non-bloated log is better for supporting you, and finding a solution easily.\
+当出现故障时，建议使用原版客户端。\
+游戏提供的日志通常会在需要时被支持团队要求。\
+简洁的日志更有助于支持你并更容易找到解决方案。
 {% endhint %}
 
-### Any launcher
+### 任意启动器
 
-Join the server and let the pack load.\
-Open your Minecraft GAME log file, **not server** logs.\
-It is usually located here: `%appdata%\.minecraft\logs\latest.log` \
-You can clearly see which files failed to load and why, the errors are clear in most of the cases.
+加入服务器并让资源包加载。\
+打开你的 Minecraft 游戏日志文件，**不是服务器** 日志。\
+通常位于：`%appdata%\.minecraft\logs\latest.log` \
+你可以清楚地看到哪些文件加载失败以及原因，大多数情况下错误信息很明确。
 
-### Original launcher
+### 原版启动器
 
-#### Enable output log
+#### 启用输出日志
 
 ![](../.gitbook/assets/image\_\(135\).png)
 
-#### Join the server and read the log
+#### 加入服务器并阅读日志
 
-![](<../.gitbook/assets/json\_errors (1) (1) (1) (1).png>)
+![](<../.gitbook/assets/json_errors (1) (1) (1) (1).png>)
 
-#### Find out which file is broken
+#### 查找哪个文件出现问题
 
-You can clearly see which files failed to load and why, the errors are clear in most of the cases.\
-In this example I had two broken files `gem_vending_machine` and `whitebathroom_sink`.\
-The error tells me that the JSON files are broken, they probably have bad characters inside or they are corrupted.
+你可以清楚地看到哪些文件加载失败以及原因，大多数情况下错误信息很明确。\
+在此示例中，我有两个损坏的文件 `gem_vending_machine` 和 `whitebathroom_sink`。\
+错误信息告诉我 JSON 文件已损坏，它们可能包含错误字符或已被破坏。
 
-## _Resourcepack not loading, I get an error_ <a href="#resourcepack-not-loading-i-get-an-error-in-chat" id="resourcepack-not-loading-i-get-an-error-in-chat"></a>
+## 资源包未加载，我收到错误 <a href="#resourcepack-not-loading-i-get-an-error-in-chat" id="resourcepack-not-loading-i-get-an-error-in-chat"></a>
 
-* If you have **SkinsRestorer** please [read here](../compatibility-with-other-plugins/compatible/skinsrestorer.md).
-* Check if you have another plugin that uses **custom resourcepacks**\
-  **I**f you have a similar plugins please **disable** its **resourcepack** feature or **ItemsAdder** won't be able to apply the pack correctly. If you want to apply both packs [read here](../plugin-usage/merge-resourcepacks/).
-* Make sure you don't have any resourcepack set in the `server.properties` file.
-* **Minecraft** limits servers resourcepacks **size** to **50MB** on Minecraft **1.14**, **100MB** on **1.15+** and **250MB** on **1.18+**.\
-  Make sure to **compress** your **textures** and your **music** files before creating the zip file.
-* Be sure that your `url` is a **direct** download link to the zip file.\
-  If you paste the link on your browser (Firefox/Chrome) you must instantly see the download start.\
-  It's a wrong URL if you see a download page with buttons.\
-  Read the resourcepack [hosting tutorials](../plugin-usage/resourcepack-hosting/).
-* Be sure to follow all resourcepack hosting [tutorial ](../plugin-usage/resourcepack-hosting/)steps.
-* If you use [`self-host`](../plugin-usage/resourcepack-hosting/resourcepack-self-hosting.md) make sure the port is opened.
-* Run `/iainfo` command and make sure the resourcepack **URL** is reachable from your browser and it directly downloads the resourcepack `.zip` file.
-* Make sure you're not using **UPPERCASE**, **space** or **special characters** in items **names**, **namespaces**, **texture** files (png) and **model** files (json).\
-  For example an ID for a custom item: `CustomSword` is wrong, use `custom_sword`.
+* 如果你有 **SkinsRestorer**，请[阅读此处](../compatibility-with-other-plugins/compatible/skinsrestorer.md)。
+* 检查是否有其他插件使用 **自定义资源包**\
+  如果你有类似插件，请 **禁用** 其 **资源包** 功能，否则 **ItemsAdder** 将无法正确应用资源包。如果你想同时应用两个资源包，请[阅读此处](../plugin-usage/merge-resourcepacks/)。
+* 确保 `server.properties` 文件中没有设置任何资源包。
+* **Minecraft** 限制服务器资源包的 **大小**，**1.14** 版本为 **50MB**，**1.15+** 版本为 **100MB**，**1.18+** 版本为 **250MB**。\
+  在创建 ZIP 文件之前，请确保 **压缩** 你的 **纹理** 和 **音乐** 文件。
+* 确保你的 `url` 是指向 ZIP 文件的 **直接** 下载链接。\
+  如果你在浏览器（Firefox/Chrome）中粘贴链接，你应该会立即看到下载开始。\
+  如果你看到带有按钮的下载页面，则 URL 是错误的。\
+  请查看资源包 [托管教程](../plugin-usage/resourcepack-hosting/)。
+* 确保按照所有资源包托管 [教程](../plugin-usage/resourcepack-hosting/) 步骤操作。
+* 如果你使用 [`自托管`](../plugin-usage/resourcepack-hosting/resourcepack-self-hosting.md)，请确保端口已打开。
+* 运行 `/iainfo` 命令，确保资源包 **URL** 可以从浏览器访问，并且直接下载资源包 `.zip` 文件。
+* 确保你在项目 **名称**、**命名空间**、**纹理** 文件（png）和 **模型** 文件（json）中未使用 **大写字母**、**空格** 或 **特殊字符**。\
+  例如，自定义物品的 ID：`CustomSword` 是错误的，使用 `custom_sword`。
 
-### _My players can't load the resourcepack! I've followed the whole tutorial_ <a href="#my-players-cant-see-textures-but-ive-followed-the-whole-tutorial" id="my-players-cant-see-textures-but-ive-followed-the-whole-tutorial"></a>
+### _我的玩家无法加载资源包！我已经按照整个教程操作_ <a href="#my-players-cant-see-textures-but-ive-followed-the-whole-tutorial" id="my-players-cant-see-textures-but-ive-followed-the-whole-tutorial"></a>
 
-* Enable the resourcepack in the server list settings: [http://imgur.com/a/SG0AU](http://imgur.com/a/SG0AU)
-* Make sure you don't have any inventory (GUI) or book opening on join.\
-  This can cause the resourcepack prompt to disappear and the player won't be able to click on it.\
-  In order to fix this you can use the free plugin [ResourcePackBroadcast](https://www.spigotmc.org/resources/resourcepackbroadcast.88318/).\
-  This allows you to run commands as soon as the resourcepack is accepted (and various other features).
-* Increasing the `delay-ticks` in `config.yml` of **ItemsAdder** to `10` or greater.
-* Leave the server, go to `%appdata%/.minecraft/server-resource-packs` and delete everything. Then join the server again.
+* 在服务器列表设置中启用资源包：[http://imgur.com/a/SG0AU](http://imgur.com/a/SG0AU)
+* 确保玩家加入时没有打开任何物品栏（GUI）或书本。\
+  这可能导致资源包提示消失，玩家无法点击。\
+  为解决此问题，你可以使用免费的插件 [ResourcePackBroadcast](https://www.spigotmc.org/resources/resourcepackbroadcast.88318/)。\
+  这允许你在资源包被接受后立即运行命令（以及其他各种功能）。
+* 将 **ItemsAdder** 中 `config.yml` 的 `delay-ticks` 增加到 `10` 或更高。
+* 离开服务器，转到 `%appdata%/.minecraft/server-resource-packs` 并删除所有内容。然后再次加入服务器。
