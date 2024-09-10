@@ -1,18 +1,18 @@
-# Download Spigot
+# 下载Spigot核心
 
-## How to download Paper (alternative to Spigot)
+## 如何下载Paper核心（可代替Spigot核心）
 
 {% embed url="https://papermc.io/downloads" %}
 
-## How to download Spigot
+## 如何下载Spigot核心
 
-Watch this tutorial:
+观看此教程：
 
 {% embed url="https://www.youtube.com/watch?v=VzZcgnWJSEg" %}
 
-## How to download Purpur
+## 如何下载Purpur核心
 
 {% embed url="http://purpur.pl3x.net" %}
 
 
-
+（翻译者：该文件是为初学者准备的，老手可以不用看了）
