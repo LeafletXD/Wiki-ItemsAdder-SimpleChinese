@@ -1,23 +1,23 @@
 ---
-description: ItemsAdder after 3.2.0
+描述：ItemsAdder 3.2.0之后的版本
 ---
 
-# 🗑 Latest ItemsAdder
+# 🗑 最新版 ItemsAdder
 
-## 🗑 ItemsAdder newer than 3.3.0
+## 🗑 ItemsAdder 3.3.0 及更高版本
 
-### How can I remove all the items and default stuff?
+### 如何移除所有项目和默认内容？
 
 {% hint style="info" %}
-If you only want to make your own items, blocks and other things it's easy!\
-Follow this tutorial.
+如果你只想创建自己的物品、方块和其他内容，这很简单！\
+请按照以下教程操作。
 {% endhint %}
 
-#### How to delete
+#### 如何删除
 
-Open `plugins/ItemsAdder/contents/` folder and delete the folders/files you don't need
+打开 `plugins/ItemsAdder/contents/` 文件夹，删除你不需要的文件夹/文件。
 
-#### Finalizing the changes
+#### 完成更改
 
-Run this command: `/iacleancache items`\
-Then run `/iazip`.
+运行以下命令：`/iacleancache items`\
+然后运行 `/iazip`。
