@@ -1,30 +1,30 @@
-# ⚠ Plugin doesn't work!
+# ⚠ 插件没有正常加载！
 
-## Did you recently update your server/plugin or installed a new plugin?
+## 最近是否更新了服务器/插件或安装了新的插件？
 
-Try to remove the new plugin, restore from a server backup, or downgrade the updated plugin/server version and check if the issue persists.
+尝试移除新插件，恢复服务器备份，或降级更新的插件/服务器版本，然后检查问题是否仍然存在。
 
-### **Please read this if you still have problems** <a href="#if-you-still-have-problems-please-read-this-and-then-contact-me" id="if-you-still-have-problems-please-read-this-and-then-contact-me"></a>
+### **如果仍然有问题，请阅读以下内容** <a href="#if-you-still-have-problems-please-read-this-and-then-contact-me" id="if-you-still-have-problems-please-read-this-and-then-contact-me"></a>
 
-When you report something be sure to:
+在报告问题时，请确保：
 
-* follow every single step of my tutorials and make sure to read all the wiki.&#x20;
-* test the plugin on a **CLEAN** server (with only **ItemsAdder** installed) since it could be a plugin interfering.
-* use the latest version of the plugin, its dependencies and server.
+* 遵循我的教程中的每一步，并确保阅读所有 wiki。  
+* 在一个 **没有任何其他插件** 的服务器上测试插件（仅安装 **ItemsAdder 和前置**），因为可能是其他插件干扰了。
+* 使用插件、其依赖项和服务器的最新版本。
 
-If the problem persists, and you think it's a bug, send me these information when you report the problem:
+如果问题仍然存在，并且你认为这是一个 bug，请在报告问题时提供以下信息：
 
-* Exactly what you did to trigger the problem
-* Server version, use `/version` command and send me the exact text it shows (use it in console to copy and paste)
-* Plugin version
-* Tell me if you edited the .yml files of ItemsAdder
-* Tell me if you edited the resourcepack
-* Zip ItemsAdder .yml files and send me them
-* Specify if the plugin shows error in console or in chat
-* Complete log of your server (not just a small portion of the error you see of **ItemsAdder** or I can't identify the issue)
+* 触发问题的具体操作
+* 服务器版本，使用 `/version` 命令并发送给我显示的确切文本（在控制台中使用以复制和粘贴）
+* 插件版本
+* 告诉我是否编辑过 ItemsAdder 的 .yml 文件
+* 告诉我是否编辑过资源包
+* 压缩 ItemsAdder 的 .yml 文件并发送给我
+* 指明插件是在哪个地方显示错误，是在控制台还是在聊天中
+* 服务器的完整日志（不仅仅是 **ItemsAdder** 错误的小部分，否则我无法识别问题）
 
 {% hint style="warning" %}
-Use the search button before submitting a report, people might already have reported it.
+在提交报告之前使用搜索按钮，其他人可能已经报告过类似的问题。
 {% endhint %}
 
 {% embed url="https://github.com/PluginBugs/Issues-ItemsAdder/issues" %}
