@@ -1,5 +1,5 @@
 ---
-描述： ItemsAdder 兼容 MMOItems，并且非常容易整合
+描述: ItemsAdder 兼容 MMOItems，并且非常容易整合
 ---
 
 # MMOItems
