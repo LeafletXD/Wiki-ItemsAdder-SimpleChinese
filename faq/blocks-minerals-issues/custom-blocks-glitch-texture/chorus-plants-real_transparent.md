@@ -1,23 +1,23 @@
-# Chorus plants (REAL\_TRANSPARENT)
+# 紫颂植物 (REAL_TRANSPARENT)
 
-## REAL\_TRANSPARENT blocks break animation in some cases
+## REAL_TRANSPARENT 方块在某些情况下的破坏动画问题
 
 {% embed url="https://youtu.be/1HPjKn_vmw8" %}
 
 {% hint style="info" %}
-This is not harmful so you can just ignore it!
+这并不会造成严重问题，你可以忽略它！
 {% endhint %}
 
-This is only a graphical glitch and cannot be fixed in normal **Spigot** or **Paper**.\
-If you want to completely fix it you have to install **Purpur** and set this option in its `purpur.yml` file.
+这只是一个图形故障，不能在普通的 **Spigot** 或 **Paper** 中修复。  
+如果你想完全修复它，你需要安装 **Purpur** 并在其 `purpur.yml` 文件中设置此选项。
 
 {% hint style="warning" %}
-**This only works on** [**Purpur**](https://purpur.pl3x.net)**.**\
-**Spigot** and **Paper** don't have this feature.
+**仅适用于** [**Purpur**](https://purpur.pl3x.net)**。**  
+**Spigot** 和 **Paper** 没有此功能。
 
-This will completely stop chorus plants from updating. So you won't have the chain break effect on them when the first block is broken.
+这将完全停止紫颂植物的更新。因此，当第一个方块被破坏时，你将不会看到链条断裂的效果。
 
-[More info here](https://purpurmc.org/docs/Configuration/disable-chorus-plant-updates)
+[更多信息请参阅](https://purpurmc.org/docs/Configuration/disable-chorus-plant-updates)
 {% endhint %}
 
 ```yaml
@@ -25,8 +25,8 @@ This will completely stop chorus plants from updating. So you won't have the cha
     disable-chorus-plant-updates: true
 ```
 
-### Automatic drop pickup duplication issue
+### 自动掉落拾取重复问题
 
-If you have an automatic drops pickup plugin you might experience an issue where chorus fruit gets randomly added to your inventory when this kind of Chorus Plant graphical glitches happen.
+如果你有一个自动掉落拾取插件，你可能会遇到当紫颂植物出现图形故障时，紫颂果会随机添加到你的背包中的问题。
 
-To fix this you have to remove the automatic drop pickup plugin or ask its developer to add an option to disable automatic pickup of some items (Chorus Fruit) or from some blocks (Chorus Plant).
+要修复此问题，你需要移除自动掉落拾取插件，或者请求其开发者添加一个选项，以禁用自动拾取某些物品（紫颂果）或某些方块（紫颂植物）。
