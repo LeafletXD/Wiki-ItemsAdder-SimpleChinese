@@ -1,18 +1,18 @@
-# Leaves and transparent blocks problems
+# 树叶和透明方块问题
 
 {% hint style="danger" %}
-#### Tree blocks sometimes disappear and become air blocks
+#### 树木方块有时会消失并变为空气方块
 
-This is a know issue in CREATIVE mode as the client doesn't send some packets to the server.\
-Please try in survival mode.
+这是一个在创造模式下的已知问题，因为客户端不会向服务器发送某些数据包。  
+请尝试在生存模式下操作。
 {% endhint %}
 
 {% hint style="danger" %}
-#### REAL\_TRANSPARENT blocks are dropped when water flows on them
+#### REAL_TRANSPARENT 方块在水流经过时被掉落
 
-I know this bug and I can't fix it without making your server an oven.\
+我知道这个 bug，但在不让你的服务器变成“烤箱”的情况下无法修复。  
 \
-Details:\
-As you already know Minecraft is not that great and most of the cool features require a lot of hacks to be implemented.\
-One of these are custom blocks. To fix this water bug I'd have to listen to the water flowing event and check if every block around the water is a custom block. This event is called a looooooot of times in midsized server and I can't make the plugin lag everything.
+详细信息：  
+正如你所知道的，Minecraft 并不是那么完善，许多酷炫的功能实现起来需要很多“黑科技”。  
+其中之一就是自定义方块。要修复这个水流 bug，我需要监听水流事件，并检查水周围的每个方块是否为自定义方块。在中型服务器上，这个事件会被调用很多次，而我不能让插件导致所有东西都出现延迟。
 {% endhint %}
