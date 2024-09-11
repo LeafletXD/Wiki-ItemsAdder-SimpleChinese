@@ -1,11 +1,11 @@
-# Noteblocks (REAL\_NOTE)
+# 音符盒 (REAL_NOTE)
 
-Already placed Noteblocks (before ItemsAdder installation) may be shown with custom blocks textures.
+在安装 ItemsAdder 之前放置的音符盒可能会显示为自定义方块的纹理。
 
 {% hint style="info" %}
-This is only a graphical glitch and will be fixes as soon as you make the Noteblocks play (interacting or using redstone).
+这只是一个图形故障，当你使音符盒发声（互动或使用红石）时会自动修复。
 {% endhint %}
 
-## How to fix
+## 如何修复
 
-Just interact with them or trigger the redstone connections, the blocks will correctly get the vanilla Noteblock texture after this.
+只需与音符盒互动或触发红石连接，方块就会恢复为原版音符盒的纹理。
