@@ -1,62 +1,60 @@
 ---
-description: >-
-  Using a network-wide resourcepack to avoid players from redownloading a
-  different one on each join
+描述: 使用全局资源包，避免玩家在每次加入服务器时重新下载资源包
 ---
 
-# Single resourcepack Bungeecord
+# 全局资源包（Bungeecord）
 
-## Network-wide resourcepack
+## 全局资源包
 
-Do you want to install ItemsAdder on multiple Spigot servers of your network?\
-Do you want to avoid players from downloading the resourcepack each time they change server?\
-Follow this simple tutorial.
+你想在网络中的多个 Spigot 服务器上安装 ItemsAdder 吗？  
+你想避免玩家每次切换服务器时都下载资源包吗？  
+请按照这个简单的教程操作。
 
-## How to set it up
+## 设置方法
 
-For example you can have 3 servers: `lobby`, `survival`, `creative`.\\
+例如，你可以有 3 个服务器：`lobby`、`survival`、`creative`。
 
-### Step 1
+### 第一步
 
-Install ItemsAdder on all these 3 servers.
+在这 3 个服务器上安装 ItemsAdder。
 
 {% hint style="warning" %}
-<mark style="color:red;">**This is very important**</mark>
+<mark style="color:red;">**这非常重要！**</mark>
 
-Make sure to **sync all** the 3 servers `plugins/ItemsAdder/` **configurations folders** each time you make a modification, they must be the same, only the `config.yml` hosting part can change.
+每次进行修改时，请确保**同步所有** 3 个服务器的 `plugins/ItemsAdder/` **配置文件夹**，它们必须相同，只有 `config.yml` 的托管部分可以不同。
 
-This is very crucial for this task or everything won't work.
+这是此任务的关键步骤，否则将无法正常工作。
 {% endhint %}
 
-### Step 2
+### 第二步
 
-Decide a main server, for example `lobby`.\
-Open the `config.yml` of ItemsAdder in the `lobby` server and set up the hosting.
+决定一个主服务器，例如 `lobby`。  
+打开 `lobby` 服务器中 ItemsAdder 的 `config.yml` 文件，并设置托管部分。
 
 {% content-ref url="../../plugin-usage/resourcepack-hosting/" %}
 [resourcepack-hosting](../../plugin-usage/resourcepack-hosting/)
 {% endcontent-ref %}
 
 {% hint style="info" %}
-It's advised to use `self-host`, it's the best method.
+建议使用 `self-host`，这是最好的方法。
 {% endhint %}
 
-After you finished configuring the hosting (follow the linked tutorial carefully) you have to use the `/iainfo` command and get the URL in console, copy it.
+在完成托管配置后（仔细按照链接的教程操作），使用 `/iainfo` 命令，在控制台获取 URL，并复制它。
 
-For example:
+例如：
 
 ![](<../../.gitbook/assets/image (60) (1).png>)
 
 {% hint style="warning" %}
-You must remove the URL part after `#`, it's not needed.\
-Copy it without that part after `#`.
+必须删除 `#` 之后的 URL 部分，它并不是必需的。  
+复制时请忽略 `#` 后的部分。
 {% endhint %}
 
-#### For example using `self-host`:
+#### 例如使用 `self-host`：
 
 <details>
 
-<summary>Self host example</summary>
+<summary>自托管示例</summary>
 
 {% code title="config.yml" %}
 ```yaml
@@ -76,14 +74,14 @@ resource-pack:
 ```
 {% endcode %}
 
-Run `/iazip` to generate the resourcepack.
+运行 `/iazip` 以生成资源包。
 
 </details>
 
-### Step 3
+### 第三步
 
-Open the other servers (survival, creative) ItemsAdder `config.yml` file and edit the hosting part.\
-Instead of `YOUR_PACK_COMPLETE_URL` you have to put the **URL** you got from the `/iainfo` command.
+打开其他服务器（survival、creative）的 ItemsAdder `config.yml` 文件，并编辑托管部分。  
+将 `/iainfo` 命令获得的 **URL** 填入 `YOUR_PACK_COMPLETE_URL` 的位置。
 
 {% code title="config.yml" %}
 ```yaml
@@ -103,14 +101,14 @@ resource-pack:
 ```
 {% endcode %}
 
-### Step 4 (Bungeecord only)
+### 第四步（仅限 Bungeecord）
 
-Install the Bungeecord plugin to make the loading even faster!
+安装 Bungeecord 插件，以使加载速度更快！
 
 {% embed url="https://www.spigotmc.org/resources/96794" %}
 
 {% hint style="danger" %}
-<mark style="color:red;">**Do not install**</mark> <mark style="color:red;">**BungeePackFix**</mark> <mark style="color:red;">**on**</mark> <mark style="color:red;">**Spigot**</mark> <mark style="color:red;">**servers!**</mark>
+<mark style="color:red;">**不要在**</mark> <mark style="color:red;">**Spigot**</mark> <mark style="color:red;">**服务器上安装**</mark> <mark style="color:red;">**BungeePackFix**</mark>！
 
-This is a **Bungeecord** plugin! Install it on **Bungeecord**!
+这是一个 **Bungeecord** 插件！请安装在 **Bungeecord** 上！
 {% endhint %}
