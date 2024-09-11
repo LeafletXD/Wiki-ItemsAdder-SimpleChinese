@@ -1,30 +1,30 @@
 ---
-description: Glitched blocks in some areas/custom worlds
+描述: 在某些区域/自定义世界中出现的方块故障
 ---
 
-# Glitched blocks around the map
+# 地图里的方块出现故障
 
-## Glitched blocks
+## 方块故障
 
 {% hint style="info" %}
-This is normal if you use `REAL` , `REAL_TRANSPARENT` types to create custom blocks.\
-ItemsAdder uses Mushroom Blocks and Chorus Plants to create them.
+如果你使用 `REAL` 或 `REAL_TRANSPARENT` 类型来创建自定义方块，这种情况是正常的。  
+ItemsAdder 使用蘑菇方块和紫颂植物来创建这些方块。
 
-This happens because the game generates them during gameplay to create some structures (example: big mushrooms in the overworld and chorus plants in the end), so they might spawn with some specific block data, which interfere with ItemsAdder blocks.
+这是因为游戏在游戏过程中生成这些方块，以创建一些结构（例如：在主世界中生成的大蘑菇和末地的紫颂植物），因此它们可能会带有一些特定的方块数据，这会与 ItemsAdder 方块产生冲突。
 {% endhint %}
 
 {% hint style="success" %}
-This is only a graphical glitch, this state won't cause duplication bugs or similar.
+这只是一个图形故障，这种状态不会导致重复错误或类似问题。
 {% endhint %}
 
 ![](<../../../.gitbook/assets/image (50) (1) (1) (1).png>)
 
-Generally you should avoid using `REAL` custom blocks type (mushroom) and use `REAL_NOTE` custom blocks type.\
-`REAL_NOTE` uses **Note Blocks** to create custom blocks, so you won't have this issue because they don't naturally generate around the vanilla world.
+通常你应该避免使用 `REAL` 自定义方块类型（蘑菇），而使用 `REAL_NOTE` 自定义方块类型。  
+`REAL_NOTE` 使用 **音符盒** 来创建自定义方块，因此你不会遇到这种问题，因为音符盒不会在原版世界中自然生成。
 
-## How to fix
+## 如何修复
 
-Open `config.yml` and set this option:
+打开 `config.yml` 并设置以下选项：
 
 {% code title="config.yml" %}
 ```yaml
@@ -34,9 +34,9 @@ Open `config.yml` and set this option:
 ```
 {% endcode %}
 
-## Advanced fix on Paper 1.20.1+
+## Paper 1.20.1+ 高级修复
 
-### Disable REAL\_NOTE blocks glitches
+### 禁用 REAL_NOTE 方块的故障
 
 ```yaml
 block-updates:
@@ -45,33 +45,33 @@ block-updates:
 ```
 
 {% hint style="warning" %}
-### Note
+### 注意
 
-Setting `disable-tripwire-updates: true` will completely stop tripwire from updating.\
-So it can potentially cause tripwires traps to not work anymore.\
+设置 `disable-tripwire-updates: true` 将完全停止 tripwire 的更新。  
+这可能导致 tripwire 触发器无法再正常工作。
 
-Setting `disable-noteblock-updates: true` will commit into same behaviour.\
-Which means NO UPDATES. So you will be unable to do music redstone circuit.
+设置 `disable-noteblock-updates: true` 也会造成相同的行为。  
+这意味着 NO 更新，因此你将无法使用音乐红石电路。
 {% endhint %}
 
-## Advanced fix on on Purpur (before 1.20.1)
+## Purpur（1.20.1 之前）高级修复
 
 {% hint style="warning" %}
-**This only works on** [**Purpur**](https://purpur.pl3x.net)**.**\
-**Spigot** and **Paper** don't have this feature.
+**仅适用于** [**Purpur**](https://purpur.pl3x.net)**。**  
+**Spigot** 和 **Paper** 没有此功能。
 {% endhint %}
 
-Enable these options in **`purpur.yml`** configuration:
+在 **`purpur.yml`** 配置中启用以下选项：
 
 * [https://purpurmc.org/docs/Configuration/disable-mushroom-updates](https://purpurmc.org/docs/Configuration/disable-mushroom-updates)
 * [https://purpurmc.org/docs/Configuration/disable-note-block-updates](https://purpurmc.org/docs/Configuration/disable-note-block-updates)
 * [https://purpurmc.org/docs/Configuration/disable-chorus-plant-updates](https://purpurmc.org/docs/Configuration/disable-chorus-plant-updates)
 
 {% hint style="warning" %}
-Note: `disable-chorus-plant-updates: true` will completely stop chorus plants from updating. So you won't have the chain break effect on them when the first block is broken.
+注意：`disable-chorus-plant-updates: true` 将完全停止紫颂植物的更新。因此，当第一个方块被破坏时，你将不会看到链条断裂的效果。
 {% endhint %}
 
-**Example:**
+**示例：**
 
 ```yaml
   blocks:
