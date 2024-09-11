@@ -10,8 +10,11 @@
 
 ## 如何修复
 
-![](<../../.gitbook/assets/image (78).png>)
+![](<../../.gitbook/assets/image (78).png>)\
+视频设置
 
-![](<../../.gitbook/assets/image (62) (1).png>)
+![](<../../.gitbook/assets/image (62) (1).png>)\
+其他
 
-![](<../../.gitbook/assets/image (59).png>)
+![](<../../.gitbook/assets/image (59).png>)\
+显示OpenGL 错误：关闭
