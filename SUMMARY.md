@@ -28,7 +28,7 @@
       * [紫颂植株 (REAL\_TRANSPARENT)](faq/blocks-minerals-issues/custom-blocks-glitch-texture/chorus-plants-real\_transparent.md)
     * [我已删除了方块，后台提示该ID被占用](faq/blocks-minerals-issues/i-removed-blocks-but-keep-saying-that-i-used-all-the-ids.md)
     * [我找不到任何 矿物/矿石](faq/blocks-minerals-issues/i-cant-find-any-mineral-ore.md)
-    * [方块掉落了 蘑菇块/音符盒/紫颂植株](faq/blocks-minerals-issues/blocks-drop-mushrooms.md)
+    * [方块掉落了 蘑菇块/音符盒/紫颂果](faq/blocks-minerals-issues/blocks-drop-mushrooms.md)
     * [树叶和透明方块问题](faq/blocks-minerals-issues/leaves-and-transparent-blocks-problems.md)
     * [方块无粒子效果](faq/blocks-minerals-issues/block-particles-not-playing.md)
   * [💧 液体Bugs](faq/liquids-bugs.md)
