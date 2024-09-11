@@ -1,44 +1,44 @@
 ---
-description: Armors textures look broken when using custom shaders mods (1.17+)
+描述: 使用自定义着色器模组时（1.17+），盔甲纹理看起来是损坏了
 ---
 
-# Textures broken by shaders mod
+# 使用光影时材质出现了问题
 
 {% hint style="warning" %}
-**This bug has a workaround fix in ItemsAdder 3.0.3**
+**ItemsAdder 3.0.3 中有此问题的临时修复方法**
 
-**Note:** this fix requires you to have **Optifine** or a **CIT mod** equivalent (like **CIT Resewn**) installed in your game.
+**注意：** 此修复需要在游戏中安装 **Optifine** 或等效的 **CIT 模组**（如 **CIT Resewn**）。
 
-If you see broken textures make sure you are using ItemsAdder 3.0.3 or a more recent version.\
-Also make sure you regenerated your resourcepack using `/iazip` (and read the [hosting tutorial](../../plugin-usage/resourcepack-hosting/) if needed).
+如果你看到损坏的纹理，请确保使用的是 ItemsAdder 3.0.3 或更新的版本。\
+同时，确保使用 `/iazip` 重新生成了资源包（如有需要，请阅读 [托管教程](../../plugin-usage/resourcepack-hosting/)）。
 {% endhint %}
 
 {% hint style="danger" %}
-**Optifine** 1.19.3 and 1.19.4 are currently bugged and I cannot do anything about that.\
-They don't support my fix.\
-We have to wait the developer of **Optifine** to fix that issue.
+**Optifine** 1.19.3 和 1.19.4 当前存在问题，我对此无能为力。\
+这些版本不支持我的修复方法。\
+我们需要等待 **Optifine** 开发者来解决这个问题。
 
-This is not my fault.
+这不是我的错。
 {% endhint %}
 
-![](../../.gitbook/assets/shader\_armor\_bug.png)
+![](../../.gitbook/assets/shader_armor_bug.png)
 
 ![](../../.gitbook/assets/144463413-21137314-66a3-41de-a834-9c6063e65e83.png)
 
 {% embed url="https://youtu.be/cb8OAuQE6V0" %}
 
-## What was the cause of this bug?
+## 此问题的原因是什么？
 
-### Optifine issue
+### Optifine 问题
 
-Optifine has a limitation which doesn't allow custom armors to work correctly if you have any custom Optifine shaders installed.
+Optifine 存在一个限制，当你安装了任何自定义的 Optifine 着色器时，无法正确显示自定义盔甲。
 
-You have to disable the **Optifine** shaders temporarily or temporarily live with the issue.
+你需要暂时禁用 **Optifine** 着色器，或者暂时接受这个问题。
 
-I already contacted Optifine developer about this: [https://github.com/sp614x/optifine/issues/6391](https://github.com/sp614x/optifine/issues/6391)
+我已联系 Optifine 开发者：[https://github.com/sp614x/optifine/issues/6391](https://github.com/sp614x/optifine/issues/6391)
 
-### Iris Shaders issue
+### Iris Shaders 问题
 
-Iris has a limitation which doesn't allow custom armors to work correctly if you have any custom Iris custom shader installed.
+Iris 存在一个限制，当你安装了任何自定义的 Iris 着色器时，无法正确显示自定义盔甲。
 
-I already contacted Iris developers about this: [https://github.com/IrisShaders/Iris/issues/1042](https://github.com/IrisShaders/Iris/issues/1042)
+我已联系 Iris 开发者：[https://github.com/IrisShaders/Iris/issues/1042](https://github.com/IrisShaders/Iris/issues/1042)
