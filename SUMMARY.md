@@ -33,7 +33,7 @@
     * [方块无粒子效果](faq/blocks-minerals-issues/block-particles-not-playing.md)
   * [💧 液体Bugs](faq/liquids-bugs.md)
   * [Bungeecord / Velocity](faq/bungeecord-velocity/README.md)
-    * [服务器更换时移除资源包](faq/bungeecord-velocity/remove-pack-on-server-change.md)
+    * [切换服务器时移除资源包](faq/bungeecord-velocity/remove-pack-on-server-change.md)
     * [全局资源包（Bungeecord）](faq/bungeecord-velocity/single-resourcepack-bungeecord.md)
     * [全局资源包，但不同的功能（Bungeecord）](faq/bungeecord-velocity/single-resourcepack-multiple-server.md)
   * [📤 我不能解压pack.zip文件](faq/i-cant-unzip-the-pack.zip-file.md)
