@@ -1,10 +1,10 @@
-# I can't find any mineral/ore
+# 我找不到任何 矿物/矿石
 
-## Common causes of this can be:
+## 常见原因包括：
 
-* you are searching ores in a **pregenerated world**.\
-  Ores will spawn only on new generated chunks (generated after ItemsAdder installation).\
-  This is exactly how vanilla Minecraft works. You don't get new ores in old chunks when you update the game.
-* you are searching ores around **spawn location**. Please try to **teleport far** from **spawn**
-* you are searching ores in a world with a custom name.\
-  You have to add the world name in the file: `contents/iasurvival/configs/ores/worlds_populators_1_18.yml` for **each ore** configuration.
+* 你在 **预生成的世界** 中寻找矿石。  
+  矿石只会在新生成的区块中出现（即 ItemsAdder 安装后生成的区块）。  
+  这与原版 Minecraft 的工作方式完全一样。更新游戏时，旧区块不会出现新矿石。
+* 你在 **出生点附近** 寻找矿石。请尝试 **远离出生点** 进行传送。
+* 你在一个自定义名称的世界中寻找矿石。  
+  你需要在文件 `contents/iasurvival/configs/ores/worlds_populators_1_18.yml` 中为 **每个矿石** 配置添加世界名称。
