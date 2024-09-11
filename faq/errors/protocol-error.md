@@ -1,17 +1,17 @@
-# Protocol error
+# 协议错误
 
 ### NoClassDefFoundError
 
-If you get an error about Protocol please install latest ProtocolLib [https://www.spigotmc.org/resources/protocollib.1997/](https://www.spigotmc.org/resources/protocollib.1997/)
+如果你遇到关于协议的错误，请使用最新的 ProtocolLib [https://www.spigotmc.org/resources/protocollib.1997/](https://www.spigotmc.org/resources/protocollib.1997/)
 
 ```
 Error occurred while enabling ItemsAdder v1.1.16 (Is it up to date?)
 java.lang.NoClassDefFoundError: com/comphenix/protocol/events/PacketListener
 ```
 
-### Cannot retrieve entity from ID
+### 无法从 ID 获取实体 | Cannot retrieve entity from ID
 
-To fix this please install latest ProtocolLib [http://ci.dmulloy2.net/job/ProtocolLib%20Gradle/lastStableBuild/artifact/build/libs/ProtocolLib.jar](http://ci.dmulloy2.net/job/ProtocolLib%20Gradle/lastStableBuild/artifact/build/libs/ProtocolLib.jar)​
+要解决此问题，请使用最新的 ProtocolLib [http://ci.dmulloy2.net/job/ProtocolLib%20Gradle/lastStableBuild/artifact/build/libs/ProtocolLib.jar](http://ci.dmulloy2.net/job/ProtocolLib%20Gradle/lastStableBuild/artifact/build/libs/ProtocolLib.jar)​
 
 ```
 [ItemsAdder] Unhandled exception occured in onPacketReceiving(PacketEvent) for ItemsAdder
