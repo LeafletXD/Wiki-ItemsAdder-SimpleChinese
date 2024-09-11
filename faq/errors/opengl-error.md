@@ -17,4 +17,4 @@
 其他
 
 ![](<../../.gitbook/assets/image (59).png>)\
-显示OpenGL 错误：关闭
+显示OpenGL错误：关闭
