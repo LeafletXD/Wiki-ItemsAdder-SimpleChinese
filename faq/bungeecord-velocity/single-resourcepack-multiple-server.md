@@ -1,25 +1,23 @@
 ---
-description: >-
-  Single resourcepack in Bungeecord network and disable individual features per
-  server
+description: 在 Bungeecord 网络中使用单一资源包，并为每个服务器禁用单独的功能
 ---
 
-# Single resourcepack Bungeecord different features
+# 全局资源包，但不同的功能（Bungeecord）
 
-Tutorial by [@itsmemac](https://github.com/LoneDev6/Wiki-ItemsAdder/pull/35)
+教程作者 [@itsmemac](https://github.com/LoneDev6/Wiki-ItemsAdder/pull/35)
 
 {% hint style="info" %}
-Before you follow this guide, make sure you have gone through [**First Install**](https://itemsadder.devs.beer/first-install) and have a working IA installation
+在按照本指南操作之前，请确保已完成 [**首次安装**](https://itemsadder.devs.beer/first-install) 并拥有一个正常运行的 IA 安装。
 {% endhint %}
 
-**STEP 1**
+**步骤 1**
 
-Create the final pack for your server locally which includes everything you would need in your entire network (every item, GUI, mob, emoji, etc...).\
-To do that you have to create a local Spigot server on your PC where you will configure everything you want.
+在本地创建包含整个网络中所需内容的最终资源包（包括每个物品、GUI、怪物、表情符号等）。  
+为此，你需要在电脑上创建一个本地 Spigot 服务器，并配置所需的一切。
 
-**STEP 2**
+**步骤 2**
 
-Open each one of your Spigot servers and set host method to `no-host` in the ItemsAdder config and disable extract of items to false
+打开每个 Spigot 服务器，在 ItemsAdder 配置中将托管方法设置为 `no-host`，并将提取物品功能禁用（设为 false）。
 
 {% code title="config.yml" %}
 ```yaml
@@ -31,40 +29,40 @@ Open each one of your Spigot servers and set host method to `no-host` in the Ite
 ```
 {% endcode %}
 
-**STEP 3**
+**步骤 3**
 
-Run `/iazip` and upload the generated pack to a file hosting and make sure it offers a DIRECT DOWNLOAD.\
-For example [**MCPACKS**](https://mc-packs.net/)**,** [**DropBox**](../../plugin-usage/resourcepack-hosting/resourcepack-on-dropbox.md)**,** [**GoogleDrive**](../../plugin-usage/resourcepack-hosting/google-drive-1.17.1+.md)**.**
+运行 `/iazip` 并将生成的资源包上传到一个提供直接下载链接的文件托管服务。  
+例如 [**MCPACKS**](https://mc-packs.net/)、[**DropBox**](../../plugin-usage/resourcepack-hosting/resourcepack-on-dropbox.md)、[**GoogleDrive**](../../plugin-usage/resourcepack-hosting/google-drive-1.17.1+.md) 等。
 
-**STEP 4**
+**步骤 4**
 
-Use plugin like [**Force resourcepack**](https://www.spigotmc.org/resources/force-resourcepacks.10499/) or similar in your bungee to load the the resource pack when you enter the network.
+使用 [**Force resourcepack**](https://www.spigotmc.org/resources/force-resourcepacks.10499/) 或类似插件，在玩家进入网络时加载资源包。
 
-**STEP 5**
+**步骤 5**
 
-Copy `ItemsAdder.jar` and the whole `ItemsAdder` plugin folder from local Spigot server to the first network server (for example `lobby`) to your `/plugins` folder.
+将 `ItemsAdder.jar` 和整个 `ItemsAdder` 插件文件夹从本地 Spigot 服务器复制到网络中的第一个服务器（例如 `lobby`），放入其 `/plugins` 文件夹中。
 
-**STEP 6**
+**步骤 6**
 
-Open the config.yml of ItemsAdder and disable the features you don't need.\
-Also remove unwanted files from `plugins/ItemsAdder/contents/` .
+打开 ItemsAdder 的 `config.yml`，禁用你不需要的功能。  
+同时，从 `plugins/ItemsAdder/contents/` 文件夹中删除不需要的文件。
 
 {% hint style="danger" %}
-DONT REMOVE dictionaries, mcemojis, mcguis, mcicons, realcraft, various\_configs FOLDER.\
-Read more here: [Removing default stuff](../removing-default-stuff/)
+不要删除 `dictionaries`、`mcemojis`、`mcguis`、`mcicons`、`realcraft`、`various_configs` 文件夹。  
+阅读更多：[删除ItemsAdder的默认物品](../removing-default-stuff/)
 {% endhint %}
 
-You basically have to keep the folders of features you want to keep in this particular server (`lobby` in this example).
+基本上，你需要保留你想在该特定服务器（例如 `lobby`）中保留的功能文件夹。
 
-**STEP 7**
+**步骤 7**
 
-Restart the server and join it. The server should ask you to download resource pack.\
-You will then see only the items you have left in the `contents` folder.
+重启服务器并加入，服务器会要求你下载资源包。  
+你将只能看到 `contents` 文件夹中保留的物品。
 
-**STEP 8**
+**步骤 8**
 
-Redo the step 5,6,7 for each server you have in your network.
+为网络中的每个服务器重复步骤 5、6、7。
 
 {% hint style="info" %}
-**BungeePackFix** plugin is not needed for this tutorial.
+本教程不需要使用 **BungeePackFix** 插件。
 {% endhint %}
