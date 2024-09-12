@@ -1,26 +1,26 @@
-# ☑ Resourcepack prompt message
+# ☑ 资源包提示消息（1.17+）
 
 {% hint style="warning" %}
-**Requires Minecraft 1.17+ clients**
+**需要 Minecraft 1.17+ 客户端**
 {% endhint %}
 
-## Custom resourcepack prompt message
+## 自定义资源包提示消息
 
-### Step 1
+### 步骤 1
 
-Open `ItemsAdder/lang/en.yml` file (or your language)
+打开 `ItemsAdder/lang/en.yml` 文件（或你的语言文件）
 
-### Step 2
+### 步骤 2
 
-Customize the message: `resourcepack-popup-message`.
+自定义消息：`resourcepack-popup-message`。
 
 ```yaml
-resourcepack-popup-message: "&6Welcome &b{player}, &6please accept the resourcepack to enjoy all the amazing features of our server.\n
-&aYou need only to download it only once."
+resourcepack-popup-message: "&6欢迎 &b{player}, &6请接受资源包获得完整的游戏体验\n
+&a你只需要下载一次资源包即可"
 ```
 
-(You can use  as newline)
+（你可以使用 `\n` 作为换行符）
 
-### Done
+### 完成
 
 ![](../.gitbook/assets/image\_\(127\).png)
