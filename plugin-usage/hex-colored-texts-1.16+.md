@@ -1,20 +1,20 @@
-# 🌈 Colored texts
+# 🌈 彩色文字（1.16+）
 
 {% hint style="warning" %}
-* Requires Minecraft 1.16+ (client) and ItemsAdder 3.5.1+
-* Doesn't work in [Minecraft language files](adding-content/minecraft-language-files.md)
+* 需要 Minecraft 1.16+（客户端）和 ItemsAdder 3.5.1+
+* 不适用于 [Minecraft 语言文件](adding-content/minecraft-language-files.md)
 {% endhint %}
 
 {% hint style="info" %}
-It works almost anywhere
+几乎可以在任何地方使用
 
-* translation files of the plugin
-* item name and lore
+* 插件的翻译文件
+* 物品名称和说明
 {% endhint %}
 
-## How to use colored texts
+## 如何使用彩色文本
 
-You can change color of text and specify a custom hex color using the special notation.
+您可以使用特殊符号更改文本的颜色并指定自定义的十六进制颜色。
 
 <pre><code><strong>&#x3C;#FE5A00>Magic Fuel
 </strong>&#x3C;red>Magic &#x3C;green>Fuel
@@ -25,24 +25,20 @@ You can change color of text and specify a custom hex color using the special no
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
- 
-
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-
- 
 
 <figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
-## Preview text
+## 预览文本
 
-You can use this website to preview the texts.
+您可以使用以下网站预览文本。
 
 {% embed url="https://webui.advntr.dev/" %}
 
-## More documentation
+## 更多文档
 
-Here you can find the official MiniMessage tutorials.
+在这里您可以找到官方的 MiniMessage 教程。
 
 {% embed url="https://docs.advntr.dev/minimessage/format.html" %}
