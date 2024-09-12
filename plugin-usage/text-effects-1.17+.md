@@ -1,27 +1,27 @@
 ---
-description: Special text animations and coloring effects
+描述: 特殊文本动画和着色效果
 ---
 
-# 🎆 Text Effects
+# 🎆 文字效果（1.17+）
 
 {% hint style="warning" %}
-* **Requires Minecraft 1.17+ clients**
-* Doesn't work in [Minecraft language files](adding-content/minecraft-language-files.md) (game limitation)
-* Edits the `rendertype_text` shader files
+* **需要 Minecraft 1.17+ 客户端**
+* 在 [Minecraft 语言文件](adding-content/minecraft-language-files.md) 中不起作用（游戏限制）
+* 编辑 `rendertype_text` 着色器文件
 {% endhint %}
 
-## What are text effects?
+## 什么是文本效果？
 
-They are some cool decorative text effects you can use in your server to make it more professional.
+文本效果是一些酷炫的装饰性文本效果，可以用来让你的服务器看起来更专业。
 
 {% hint style="warning" %}
-You have to run `/iazip` in order to enable/disable this feature.\
-Make sure also to enable it in the `config.yml`.
+你必须运行 `/iazip` 来启用/禁用此功能。\
+确保在 `config.yml` 中也启用此功能。
 
 ```yaml
 effects:
   text-effects:
-    enabled: true # This option requires /iazip when changed.
+    enabled: true # 更改此选项时需要使用 /iazip。
     customitem-name-and-lore:
       enabled: true
     chat:
@@ -35,22 +35,22 @@ effects:
 ```
 {% endhint %}
 
-## Permissions
+## 权限
 
-* Use **text-effects** in **chat**
+* 在 **聊天** 中使用 **文本效果**
   * `ia.user.text_effect.chat`
-* Use **text-effects** in **signs**
+* 在 **木牌** 中使用 **文本效果**
   * `ia.user.text_effect.sign`
-* Use **text-effects** in **books**
+* 在 **书籍** 中使用 **文本效果**
   * `ia.user.text_effect.book`
-* Use **text-effects** in **anvil** rename field
+* 在 **铁砧** 重命名字段中使用 **文本效果**
   * `ia.user.text_effect.anvil`
-* Use a **text-effect**
+* 使用 **文本效果**
   * `ia.user.text_effect.use.<effect>`
 
-## List of effects
+## 效果列表
 
-### Rainbow
+### 彩虹
 
 ![](../.gitbook/assets/rainbow.gif)
 
@@ -60,19 +60,19 @@ effects:
 
 ![](../.gitbook/assets/rainbow\_item.gif)
 
-Permission: `ia.user.text_effect.use.r`\
-Usage: `<r text>`
+权限: `ia.user.text_effect.use.r`\
+用法: `<r text>`
 
-### Wobble
+### 摇摆
 
 ![](../.gitbook/assets/wobble.gif)
 
 ![](../.gitbook/assets/wobble\_item.gif)
 
-Permission: `ia.user.text_effect.use.w`\
-Usage: `<w text>`
+权限: `ia.user.text_effect.use.w`\
+用法: `<w text>`
 
-### Jump
+### 跳跃
 
 ![](../.gitbook/assets/jump\_chat.gif)
 
@@ -80,37 +80,37 @@ Usage: `<w text>`
 
 ![](../.gitbook/assets/jump\_boss.gif)
 
-Permission: `ia.user.text_effect.use.j`\
-Usage: `<j text>`
+权限: `ia.user.text_effect.use.j`\
+用法: `<j text>`
 
-### Rainbow + Wobble
+### 彩虹 + 摇摆
 
 ![](../.gitbook/assets/rw\_chat.gif)
 
-Permission: `ia.user.text_effect.use.rw`\
-Usage: `<rw text>`
+权限: `ia.user.text_effect.use.rw`\
+用法: `<rw text>`
 
-### Rainbow + Jump
+### 彩虹 + 跳跃
 
 ![](../.gitbook/assets/rj.gif)
 
-Permission: `ia.user.text_effect.use.rj`\
-Usage: `<rj text>`
+权限: `ia.user.text_effect.use.rj`\
+用法: `<rj text>`
 
-## Where can I use these effects?
+## 可以在哪里使用这些效果？
 
-* Custom item name (in the .yml file)
-* Custom item lore (in the .yml file)
-* Chat
-* Sign
-* Book
+* 自定义物品名称（在 .yml 文件中）
+* 自定义物品描述（在 .yml 文件中）
+* 聊天
+* 木牌
+* 书籍
 * Bossbar
-* Prefix-Suffix (Luckperms for example)
-* _More soon...._
+* 前缀-后缀（例如 Luckperms）
+* _更多内容即将推出..._
 
 ![](../.gitbook/assets/rainbow\_wobble\_lore.gif)
 
-## How to create animated prefix (Luckperms)
+## 如何创建动画前缀（Luckperms）
 
 ![](../.gitbook/assets/image\_\(133\).png)
 
@@ -118,76 +118,76 @@ Usage: `<rj text>`
 
 ![](../.gitbook/assets/prefix.gif)
 
-Click here to read[ Luckperms official tutorials](https://luckperms.net/wiki/Prefixes,-Suffixes-&-Meta) if you don't know how prefix works.
+点击这里阅读 [Luckperms 官方教程](https://luckperms.net/wiki/Prefixes,-Suffixes-&-Meta)，如果你不知道前缀是如何工作的。
 
-## Using text effects without the placeholders
+## 在不使用占位符的情况下使用文本效果
 
-For some reason if you want to use text effects on areas which don't support ItemsAdder placeholders (like `<r TEXT>`) you can use another method.
+如果你想在不支持 ItemsAdder 占位符的区域（如 `<r TEXT>`）中使用文本效果，可以使用另一种方法。
 
-These effects are triggered based on a **special HEX color**.\
-So if the area where you want to show a text effect supports HEX colors you can do that.
+这些效果是基于 **特殊 HEX 颜色** 触发的。\
+因此，如果你想展示文本效果的区域支持 HEX 颜色，你可以这样做。
 
-### Special colors
+### 特殊颜色
 
-#### Rainbow
+#### 彩虹
 
 `#FFFFFE`
 
-#### Wobble
+#### 摇摆
 
 `#FFFFFD`
 
-#### Jump
+#### 跳跃
 
 `#FFFFFB`
 
-#### Rainbow + Wobble
+#### 彩虹 + 摇摆
 
 `#FFFFFC`
 
-#### Rainbow + Jump
+#### 彩虹 + 跳跃
 
 `#FFFEFE`
 
-### Using them in Minecraft vanilla JSON notation
+### 在 Minecraft 原生 JSON 表示法中使用
 
-This triggers the rainbow effect:\
+触发彩虹效果：\
 `/tellraw @a {"text":"custom text example", "color":"#FFFFFE"}`
 
-Replace `FFFFFE` with the effect you want.
+用你想要的效果替换 `FFFFFE`。
 
-### Using them in plugins which support _MiniMessage_
+### 在支持 _MiniMessage_ 的插件中使用
 
 {% embed url="https://docs.advntr.dev/minimessage/format.html#color" %}
 
-(for example ItemsAdder itself and [ChatFormatter](https://www.spigotmc.org/resources/102212/))
+（例如 ItemsAdder 自身和 [ChatFormatter](https://www.spigotmc.org/resources/102212/)）
 
-This triggers the rainbow effect: `<#FFFFFE>custom text example`
+触发彩虹效果：`<#FFFFFE>custom text example`
 
-Replace `FFFFFE` with the effect you want.
+用你想要的效果替换 `FFFFFE`。
 
-### Using them in plugins which support legacy HEX notation
+### 在支持旧版 HEX 表示法的插件中使用
 
-#### Rainbow
+#### 彩虹
 
 `&X&F&F&F&F&F&E`
 
-#### Wobble
+#### 摇摆
 
 `&X&F&F&F&F&F&D`
 
-#### Jump
+#### 跳跃
 
 `&X&F&F&F&F&F&B`
 
-#### Rainbow + Wobble
+#### 彩虹 + 摇摆
 
 `&X&F&F&F&F&F&C`
 
-#### Rainbow + Jump
+#### 彩虹 + 跳跃
 
 `&X&F&F&F&F&F&E`
 
-This was tested on [EpicRename](https://www.spigotmc.org/resources/epicrename.4341/) and should work in any plugin or place where Spigot handles the colors replacement using its own legacy colors code.
+此方法已在 [EpicRename](https://www.spigotmc.org/resources/epicrename.4341/) 上测试，应该可以在 Spigot 使用其旧版颜色代码的任何插件或地方中工作。
 
-Example: `/rename &x&F&F&F&F&F&ETest`
+示例：`/rename &x&F&F&F&F&F&ETest`
