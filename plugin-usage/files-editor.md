@@ -1,10 +1,10 @@
-# 📄 Files editor
+# 📄 文件编辑器
 
-## VisualStudio Code extension
+## Visual Studio Code 扩展
 
-### [> Download the Visual Studio Code (vs-code) here <](https://code.visualstudio.com/download)
+### [> 点击下载 Visual Studio Code (vs-code) <](https://code.visualstudio.com/download)
 
-### [> Download the vs-code extension here <](https://marketplace.visualstudio.com/items?itemName=LoneDev.ia-vscode)&#x20;
+### [> 点击下载 vs-code 扩展 <](https://marketplace.visualstudio.com/items?itemName=LoneDev.ia-vscode)&#x20;
 
 <div align="left">
 
