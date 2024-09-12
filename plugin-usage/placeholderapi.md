@@ -1,53 +1,53 @@
-# 📎 Special placeholders
+# 📎 特殊占位符
 
 ## PlaceholderAPI
 
-### FontImage (emoji etc)
+### FontImage（字符图像、表情符号等）
 
-This is the code: `%img_NAME%` instead of `NAME` write the font\_image name.\
-For example: `%img_smile%`
+代码是：`%img_NAME%`，其中 `NAME` 替换为字体图像名称。\
+例如：`%img_smile%`
 
-### Offsets
+### 偏移量
 
-You can shift text/font\_images back and forward.\
-For example&#x20;
+你可以向前或向后移动文本/字体图像。\
+例如：
 
-* you can shift it back of 16 pixels by writing `%img_offset_-16%`
-* you can shift it forward of 16 pixels by writing `%img_offset_16%`
+* 向后移动 16 像素，写作 `%img_offset_-16%`
+* 向前移动 16 像素，写作 `%img_offset_16%`
 
-### ItemsAdder PlayerStats (HUDs values)
+### ItemsAdder 玩家统计数据（HUD 值）
 
-These are stats used by ItemsAdder, they're not vanilla stats.
+这些是 ItemsAdder 使用的统计数据，而非原版统计数据。
 
-This is the code: `%iaplayerstat_NAME%` instead of `NAME` write the playerstat name.\
-For example: `%iaplayerstat_mana%` or also `%iaplayerstat_thirst%`
+代码是：`%iaplayerstat_NAME%`，其中 `NAME` 替换为玩家统计数据名称。\
+例如：`%iaplayerstat_mana%` 或 ` %iaplayerstat_thirst%`
 
-You can use this command to test it out:\
+你可以使用此命令进行测试：\
 `/papi parse me %iaplayerstat_thirst%`\
 `/papi parse me %iaplayerstat_mana%`
 
 {% hint style="info" %}
-#### Read more about playerstats
+#### 了解更多关于玩家统计数据的信息
 {% endhint %}
 
-## ItemsAdder built-in placeholders (without PlaceholderAPI)
+## ItemsAdder 内置占位符（无 PlaceholderAPI）
 
-### FontImage (emoji etc.)
+### FontImage（字符图像、表情符号等）
 
-This is the code: `:img_NAME:` instead of `NAME` write the font\_image name.\
-For example: `:img_smile:`
+代码是：`:img_NAME:`，其中 `NAME` 替换为字体图像名称。\
+例如：`:img_smile:`
 
-### Offsets
+### 偏移量
 
-You can shift text or font\_images back and forward.\
-For example&#x20;
+你可以向前或向后移动文本或字体图像。\
+例如：
 
-* you can shift it back of 16 pixels by writing `:img_offset_-16:`
-* you can shift it forward of 16 pixels by writing `:img_offset_16:`
+* 向后移动 16 像素，写作 `:img_offset_-16:`
+* 向前移动 16 像素，写作 `:img_offset_16:`
 
-### ItemsAdder PlayerStats (HUDs values)
+### ItemsAdder 玩家统计数据（HUD 值）
 
-These are stats used by ItemsAdder, they're not vanilla stats.
+这些是 ItemsAdder 使用的统计数据，而非原版统计数据。
 
-This is the code: `:iaplayerstat_NAME:` instead of `NAME` write the playerstat name.\
-For example: `:iaplayerstat_mana:` or also `:iaplayerstat_thirst:`
+代码是：`:iaplayerstat_NAME:`，其中 `NAME` 替换为玩家统计数据名称。\
+例如：`:iaplayerstat_mana:` 或 `:iaplayerstat_thirst:`
