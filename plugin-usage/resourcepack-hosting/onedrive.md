@@ -1,24 +1,26 @@
-# 📤 OneDrive
+# 📤 用OneDrive托管
 
 {% hint style="warning" %}
-#### Not recommended.
+#### 不推荐使用
 {% endhint %}
 
-### Step 1
+（翻译者：我**强烈不建议**使用该方法作为第三方托管，因为国内可能会出现墙或是下载过慢，建议使用**自托管**或是寻找其他稳定的文件托管平台，我用过Github和Gitee）
+
+### 第一步
 
 ![](<../../.gitbook/assets/image (52) (1) (1) (1) (1).png>)
 
-### Step 2
+### 第二步
 
 ![](<../../.gitbook/assets/image (43) (1) (1).png>)
 
-### Step 3
+### 第三步
 
 ![](<../../.gitbook/assets/image (53) (1) (1).png>)
 
-### Step 4
+### 第四步
 
-Open `config.yml` of **ItemsAdder** and enable the `external-host` option for your new URL.
+打开 **ItemsAdder** 的 `config.yml` 并为您的新 URL 启用 `external-host` 选项。
 
 {% code title="config.yml" %}
 ```yaml
@@ -29,19 +31,19 @@ Open `config.yml` of **ItemsAdder** and enable the `external-host` option for yo
 ```
 {% endcode %}
 
-This is very important. Set it to true.
+这非常重要。将其设置为 true。
 
 ```yaml
 skip-url-file-type-check___DONT_ASK_HELP_IF_SET_TRUE: true
 ```
 
 {% hint style="warning" %}
-Keep in mind that it's a bit "risky" because the server cannot make sure the URL is valid.
+请注意，这有点“风险”，因为服务器无法确保 URL 的有效性。
 
-This can cause your players to be stuck on login phase if the URL is not valid or if OneDrive doesn't provide the direct download, sometimes it happens.
+如果 URL 无效或 OneDrive 未提供直接下载，这可能会导致您的玩家在登录阶段被卡住，有时会发生这种情况。
 {% endhint %}
 
-## Continue installation if you need
+## 如果需要继续安装
 
 {% content-ref url="../../first-install.md" %}
 [first-install.md](../../first-install.md)
