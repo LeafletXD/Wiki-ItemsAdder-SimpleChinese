@@ -1,61 +1,63 @@
-# 📤 LobFile hosting
+# 📤 用LobFile托管
 
 {% hint style="warning" %}
-This feature requires **ItemsAdder 3.6.3** or greater.
+此功能需要 **ItemsAdder 3.6.3** 或更高版本。
 {% endhint %}
 
-## What is LobFile?
+（翻译者：我**强烈不建议**使用该方法作为第三方托管，因为国内可能会出现墙或是下载过慢，建议使用**自托管**或是寻找其他稳定的文件托管平台，我用过Github和Gitee）
 
-**ItemsAdder** allows you to automatically upload your resourcepack on a **free online service** with servers all over the world.
+## 什么是 LobFile？
 
-Thanks a lot to **LobFile**[ ](https://ploudos.com/it/)which provides us their platform to host files for free!
+**ItemsAdder** 允许您将资源包自动上传到一个 **免费的在线服务**，该服务在全球范围内提供服务器。
+
+非常感谢 **LobFile** [这里](https://ploudos.com/it/)，他们为我们提供了免费托管文件的平台！
 
 {% embed url="https://lobfile.com/" %}
 
 {% hint style="warning" %}
-### Warning
+### 警告
 
-File size limit is 100MB for this hosting method.
+此托管方法的文件大小限制为 100MB。
 {% endhint %}
 
-## What are the advantages?
+## 有什么优势？
 
-* download speed
-* availability
-* security: your server IP address is not exposed
-* no high bandwidth usage
+* 下载速度
+* 可用性
+* 安全性：您的服务器 IP 地址不会被公开
+* 不会消耗大量带宽
 
-## I already use `self-host`, is this better?
+## 我已经在使用 `self-host`，这个更好吗？
 
-Depends.
+要看情况。
 
-It's better to use [self-host](resourcepack-self-hosting.md) if you're working on the resourcepack and you have to continuously run `/iazip`, to avoid losing time (read more [here](tips-for-fastest-usage.md)).
+如果您正在开发资源包，并且需要不断运行 `/iazip`，以避免浪费时间（详细信息见 [这里](tips-for-fastest-usage.md)），那么使用 [self-host](resourcepack-self-hosting.md) 会更好。
 
-When you've finished working on the pack you can safely start using this other hosting feature instead of `self-host`, in this case **LobFile**.\
-This will make your server traffic lower as the resourcepack won't be hosted on your server anymore.\
-Anyway your playerbase is all from the same country you can stick with `self-host`.
+当您完成资源包的工作后，您可以安全地开始使用其他托管功能而不是 `self-host`，在这种情况下就是 **LobFile**。\
+这样可以减少服务器的流量，因为资源包将不再托管在您的服务器上。\
+不过，如果您的玩家群体都来自同一国家，您可以继续使用 `self-host`。
 
-## Setup
+## 设置
 
-#### Step 1
+#### 第一步
 
-Create an account on [LobFile here](https://lobfile.com/create-account).
+在 [LobFile 这里](https://lobfile.com/create-account) 创建一个账户。
 
-#### Step 2
+#### 第二步
 
-Open your [account settings here](https://lobfile.com/my-account) and check _**"Continuous uploading"**_
+打开您的 [账户设置](https://lobfile.com/my-account) 并勾选 _**"Continuous uploading"**_
 
 <figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
-#### Step 3
+#### 第三步
 
-Hover the `API Key` text and copy your key.
+悬停在 `API Key` 文本上并复制您的密钥。
 
 <figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
-#### Step 4
+#### 第四步
 
-Enable `lobfile` in `config.yml` and disable all the other hosting methods.
+在 `config.yml` 中启用 `lobfile` 并禁用所有其他托管方法。
 
 {% code title="ItemsAdder/config.yml" %}
 ```yaml
@@ -64,7 +66,7 @@ lobfile:
 ```
 {% endcode %}
 
-Open `secret.yml` and paste your `API Key`.
+打开 `secret.yml` 并粘贴您的 `API Key`。
 
 {% code title="ItemsAdder/secret.yml" %}
 ```yaml
@@ -73,20 +75,20 @@ lobfile:
 ```
 {% endcode %}
 
-#### Step 5
+#### 第五步
 
-Run `/iazip.`
+运行 `/iazip.`
 
-Wait for the Privacy policy message to appear.\
-Run `/acceptprivacy` to accept the policy (will be asked only the first time).
+等待隐私政策消息出现。\
+运行 `/acceptprivacy` 接受政策（只会在第一次时要求）。
 
-### Done
+### 完成
 
-The **plugin** will **upload it** online **automatically**.\
-Nothing else to do, enjoy your **free automated resourcepack hosting**.
+**插件** 将 **自动上传** 资源包到网上。\
+无需其他操作，享受您的 **免费自动化资源包托管**。
 
-## Will my resourcepack be available online to random people?
+## 我的资源包会对随机用户开放吗？
 
-2023-12-21:\
-Your resourcepack won't be indexed on Google and won't be published in a list of resourcepacks.\
-Only people who know the link can download the pack.
+2023-12-21：\
+您的资源包不会被 Google 索引，也不会被发布在资源包列表中。\
+只有知道链接的人才能下载该包。
