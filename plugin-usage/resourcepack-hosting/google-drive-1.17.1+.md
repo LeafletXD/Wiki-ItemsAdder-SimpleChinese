@@ -1,44 +1,46 @@
-# 📤 Google Drive (1.17.1+)
+# 📤 用Google Drive托管 (1.17.1+)
 
-## How to use Google Drive
+## 如何使用 Google Drive
 
 {% hint style="warning" %}
-This method has some problems on some PCs in Minecraft versions before 1.17 because of a Minecraft bug, read more here: [https://bugs.mojang.com/browse/MC-143768](https://bugs.mojang.com/browse/MC-143768)
+由于 Minecraft 的一个错误，此方法在 Minecraft 1.17 版本之前的一些 PC 上存在问题，更多信息请参见：[https://bugs.mojang.com/browse/MC-143768](https://bugs.mojang.com/browse/MC-143768)
 
-This method works 100% of the times on Minecraft 1.17.1 and most recent versions.
+此方法在 Minecraft 1.17.1 及更高版本中 100% 有效。
 {% endhint %}
 
-### Step 1
+（翻译者：我**强烈不建议**使用该方法作为第三方托管，建议使用**自托管**或是寻找其他稳定的文件托管平台，我用过Github和Gitee）
 
-Rightclick on your resourcepack zip file and press "Get link"
+### 第一步
+
+右键点击您的资源包 zip 文件，然后点击“获取链接”
 
 ![](<../../.gitbook/assets/image\_(153) (1).png>)
 
-### Step 2
+### 第二步
 
-Important: set the permission to "Anyone with the link"
+重要：将权限设置为“任何拥有链接的人”
 
 ![](../../.gitbook/assets/image\_\(145\).png)
 
-Press "Copy link"
+点击“复制链接”
 
 ![](../../.gitbook/assets/image\_\(149\).png)
 
-### Step 3
+### 第三步
 
-Visit this website: [http://a.devs.beer/gdrive-direct](http://a.devs.beer/gdrive-direct)
+访问以下网站：[http://a.devs.beer/gdrive-direct](http://a.devs.beer/gdrive-direct)
 
-Paste the link and press on "Get direct link"
+粘贴链接并点击“获取直接链接”
 
 <img src="../../.gitbook/assets/image_(144).png" alt="" data-size="original">
 
-### Step 4
+### 第四步
 
-The website automatically adds the generated link in your clipboard.
+该网站会自动将生成的链接添加到您的剪贴板中。
 
 ![](../../.gitbook/assets/image\_\(147\).png)
 
-You can now paste the link inside **ItemsAdder** configuration file `config.yml`, then use `/iareload` command.
+您现在可以将链接粘贴到 **ItemsAdder** 配置文件 `config.yml` 中，然后使用 `/iareload` 命令。
 
 {% code title="config.yml" %}
 ```yaml
@@ -48,27 +50,27 @@ external-host:
 ```
 {% endcode %}
 
-### Done!
+### 完成！
 
-You can now see that the pack is correctly loaded by the game.
+您现在可以看到游戏已正确加载了资源包。
 
-## Common issues
+## 常见问题
 
-### Long time on "Making Request... 100%"
+### 在“Making Request... 100%”上等待时间过长
 
 ### ![](../../.gitbook/assets/image\_\(141\).png)
 
-This is normal. This happens because Google Drive is doing some stuff before authorizing the download of the resourcepack.
+这是正常的。发生这种情况是因为 Google Drive 在授权下载资源包之前需要做一些处理。
 
-This happens only when the player downloads the resourcepack for the first time and it will take from 5 to 10 seconds.
+这仅在玩家第一次下载资源包时发生，通常需要 5 到 10 秒钟。
 
-### Resourcepack not loading at all
+### 资源包完全无法加载
 
-This method has some problems on some PCs in Minecraft versions before 1.17 because of a Minecraft bug, read more here: [https://bugs.mojang.com/browse/MC-143768](https://bugs.mojang.com/browse/MC-143768)
+由于 Minecraft 的一个错误，此方法在 Minecraft 1.17 版本之前的一些 PC 上存在问题，更多信息请参见：[https://bugs.mojang.com/browse/MC-143768](https://bugs.mojang.com/browse/MC-143768)
 
-This method works 100% of the times on Minecraft 1.17.1 and most recent versions.
+此方法在 Minecraft 1.17.1 及更高版本中 100% 有效。
 
-## Continue installation if you need
+## 如果需要继续安装
 
 {% content-ref url="../../first-install.md" %}
 [first-install.md](../../first-install.md)
