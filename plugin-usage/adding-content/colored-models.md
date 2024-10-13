@@ -1,34 +1,34 @@
-# 🎨 Colored models
+# 🎨 彩色模型
 
 {% hint style="info" %}
-If you want to make a colored element (for example a custom colored furniture) or a colored vehicle you don't have to make a separate model for each item with different color.
+如果你想制作彩色的元素（例如自定义的彩色家具或彩色的车辆），你无需为每个不同颜色的物品制作单独的模型。
 {% endhint %}
 
-## How can I do this?
+## 我该怎么做？
 
-### 1. open your model with Blockbench
+### 1. 用 Blockbench 打开你的模型
 
 ![](../../.gitbook/assets/image\_\(79\).png)
 
-### 2. select the face you want to be colored
+### 2. 选择你想要上色的面
 
 ![](../../.gitbook/assets/image\_\(80\).png)
 
-### 3. use a white/gray texture, for better coloring
+### 3. 使用白色/灰色的纹理，以获得更好的上色效果
 
-### 4. enable the hidden "Tint" feature
+### 4. 启用隐藏的 "Tint" 功能
 
 ![](../../.gitbook/assets/image\_\(81\).png)
 
 ![](../../.gitbook/assets/image\_\(83\).png)
 
-### 5. enable the coloring for each face you want to be colored
+### 5. 启用你希望着色的面
 
 ![](../../.gitbook/assets/image\_\(85\).png)
 
-### 6. set the specific color attribute in your .yml file.
+### 6. 在你的 .yml 文件中设置特定的颜色属性。
 
-In this example I used `leather_horse_armor`but you can also use `potion`.
+在这个例子中，我使用了 `leather_horse_armor`，但你也可以使用 `potion`。
 
 ```yaml
   orange_modern_lamp:
@@ -43,10 +43,10 @@ In this example I used `leather_horse_armor`but you can also use `potion`.
 ```
 
 {% hint style="info" %}
-If you want to use a specific color you can use[ this color picker](https://www.mathsisfun.com/hexadecimal-decimal-colors.html).\
-Copy the **decimal** color (hex).
+如果你想使用特定的颜色，你可以使用 [这个颜色选择器](https://www.mathsisfun.com/hexadecimal-decimal-colors.html)。\
+复制 **十进制** 颜色（十六进制）。
 {% endhint %}
 
-### 7. now you can create as many as furnitures you want, just change the color and it will be automatically colored by the game
+### 7. 现在你可以创建任意数量的家具，只需更改颜色，游戏会自动对其进行着色
 
 ![](../../.gitbook/assets/image\_\(86\).png)
