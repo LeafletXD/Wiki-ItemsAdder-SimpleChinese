@@ -1,13 +1,13 @@
-# 🛢 Fuel
+# 🛢 燃料
 
-## Creating the item
+## 创建物品
 
 {% hint style="warning" %}
-You must use a material which can already be smelted in vanilla Minecraft or it won't work.\
-For example: `STICK`, `COAL`, `CHARCOAL` etc.
+你必须使用在原版 Minecraft 中可以熔炼的材料，否则它将无法正常工作。\
+例如：`STICK`、`COAL`、`CHARCOAL` 等。
 {% endhint %}
 
-For example this configuration will make this item usable in **BLAST\_FURNACE** and will burn in **20 ticks** (**1 second**).&#x20;
+例如，以下配置将使该物品可用于 **BLAST_FURNACE**，并在 **20 ticks** 内燃烧（**1 秒**）。
 
 ```yaml
   magic_fuel:
