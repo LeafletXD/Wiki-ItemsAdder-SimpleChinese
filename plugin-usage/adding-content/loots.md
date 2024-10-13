@@ -58,7 +58,7 @@ loots:
 <mark style="color:orange;">**警告**</mark><mark style="color:orange;">：这会使您的物品</mark> <mark style="color:orange;">**更难**</mark> <mark style="color:orange;">被</mark> <mark style="color:orange;">**掉落**</mark><mark style="color:orange;">。</mark>
 {% endhint %}
 
-## 仅在特定生物群落中掉落
+## 仅在特定生物群落中生成
 
 ```yaml
 loots:
