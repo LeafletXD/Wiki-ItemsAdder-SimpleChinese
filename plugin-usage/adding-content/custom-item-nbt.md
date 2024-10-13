@@ -1,27 +1,27 @@
-# 📎 Custom item NBT
+# 📎 自定义物品 NBT 标签
 
-## Adding custom NBT attributes to the item
+## 为物品添加自定义 NBT 属性
 
-You can specify custom **NBT** attributes to be merged into the custom item.
+你可以为自定义物品指定自定义 **NBT** 属性，并将其合并到物品中。
 
 {% hint style="danger" %}
-Make sure to provide a valid **NBT** (`json`) or it won't work!
+请确保提供有效的 **NBT** (`json`) 格式，否则它将不起作用！
 {% endhint %}
 
 {% hint style="warning" %}
-Make sure to escape the `"` character using `\`.
+确保使用 `\` 转义 `"` 字符。
 {% endhint %}
 
 {% hint style="success" %}
-This feature supports legacy NBT and the new 1.20.5+ modern NBT too!\
-It will automatically convert the legacy NBT if needed.
+此功能支持旧版 NBT 和 1.20.5+ 的新版 NBT！\
+如果需要，它会自动转换旧版 NBT。
 
-[More info](https://www.minecraft.net/en-us/article/minecraft-java-edition-1-20-5) on the 1.20.5+ changes (scroll down).
+点击查看关于 [1.20.5+](https://www.minecraft.net/en-us/article/minecraft-java-edition-1-20-5) 更改的更多信息（向下滚动查看）。
 {% endhint %}
 
-### Example custom attribute
+### 自定义属性示例
 
-For example I want to merge these tags into my item:\
+例如，我想将以下标签合并到我的物品中：\
 `{my-custom-nbt-tag:"hello this is a custom tag", another-tag:"useless"}`
 
 ```yaml
@@ -38,9 +38,9 @@ items:
       max_custom_durability: 1324
 ```
 
-### Example item name
+### 自定义物品名称示例
 
-```yml
+```yaml
 items:
   example_item_custom_name:
     enabled: true
