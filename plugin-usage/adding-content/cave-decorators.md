@@ -1,22 +1,22 @@
-# 🪨 Cave decorators
+# 🪨 洞穴生成器
 
-## Generate decorations in caves
+## 在洞穴中生成装饰物
 
 {% hint style="warning" %}
-This feature requires **ItemsAdder** 3.1.6+
+此功能需要 **ItemsAdder** 3.1.6 及以上版本
 {% endhint %}
 
-With ItemsAdder you can generate decorations in the world caves to make your server more professional and original.
+使用 ItemsAdder，你可以在世界的洞穴中生成装饰物，使你的服务器更加专业和独特。
 
-For example you can make new mushrooms, new little plants, rocks and decorations
+例如，你可以生成新的蘑菇、小植物、石头和其他装饰物。
 
 ![](<../../.gitbook/assets/image (81).png>)
 
-## Creating a Cave Populator
+## 创建洞穴装饰生成器
 
-### Creating the configuration
+### 创建配置文件
 
-For example let's create a group of small rocks which will spawn around the world.
+例如，让我们创建一组小石头，它们会在世界各地生成。
 
 ```yaml
 info:
@@ -49,30 +49,22 @@ cave_decorators:
     position: SURFACE
 ```
 
-As you can see I set some properties:
+如你所见，我设置了一些属性：
 
-`block` is the ItemsAdder block to spawn as decoration.
+- `block` 是要作为装饰物生成的 ItemsAdder 方块。
+- `bottom_blocks` 属性用于决定装饰物可以生成在哪些类型的方块上。
+- `biomes` 属性用于选择装饰物可以生成的有效生物群系。
+- `worlds` 属性决定装饰物可以生成的世界。
+- `chance` 是装饰物在每个区块生成的几率。
+- `max_height` 是装饰物可以生成的最高世界高度。
+- `min_height` 是装饰物可以生成的最低世界高度。
+- `amount` 是每组装饰物生成的数量，例如，你可以设置为 5，这样会生成 5 个相连的装饰物。
+- `position` 属性用于指定方块必须在洞穴的 `SURFACE`（表面）还是 `CEILING`（天花板）上。
 
-`bottom_blocks` property is used to decide the block types on which the decoration can spawn.
+## 创建方块
 
-`biomes` property is used to decide the valid biomes in which the decoration can spawn.
-
-`worlds` property decides the worlds in which the decoration can spawn.
-
-`chance` is the change of a decoration to spawn in each chunk of the world.
-
-`max_height` is the max world height where the decoration can spawn.
-
-`min_height` is the min world height where the decoration can spawn.
-
-`amount` is the amount of blocks to spawn in the decorations group, for example you can set 5 to make a group of 5 decorations spawn one attached to the other.
-
-`position` is a property used to specify if the block must be on the cave `SURFACE` or `CEILING`.
-
-## Creating the block
-
-Now you just have to create the block following the tutorial. You can use `REAL_NOTE`, `REAL_WIRE` `REAL_TRANSPARENT` and `REAL` blocks, depends on your needs.
+现在，你只需按照教程创建方块。你可以使用 `REAL_NOTE`、`REAL_WIRE`、`REAL_TRANSPARENT` 和 `REAL` 方块，具体取决于你的需求。
 
 {% content-ref url="block/create-a-block.md" %}
-[create-a-block.md](block/create-a-block.md)
+[创建一个自定义方块](block/create-a-block.md)
 {% endcontent-ref %}
