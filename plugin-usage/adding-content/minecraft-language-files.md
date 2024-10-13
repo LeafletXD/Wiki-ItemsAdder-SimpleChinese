@@ -27,4 +27,6 @@ minecraft_lang_overwrite:
 这是翻译文本的列表。 \
 您可以在这里找到完整列表（请将 `1.19.3` 替换为您的版本）：
 
-[https://github.com/InventivetalentDev/minecraft-assets/blob/1.19.3/assets/minecraft/lang/en_us.json](https://github.com/InventivetalentDev/minecraft-assets/blob/1.19.3/assets/minecraft/lang/en_us.json)
+简体中文：[https://github.com/InventivetalentDev/minecraft-assets/blob/1.19.3/assets/minecraft/lang/zh_cn.json](https://github.com/InventivetalentDev/minecraft-assets/blob/1.19.3/assets/minecraft/lang/zh_cn.json)\
+繁體中文（香港特別行政區）：[https://github.com/InventivetalentDev/minecraft-assets/blob/1.19.3/assets/minecraft/lang/zh_hk.json](https://github.com/InventivetalentDev/minecraft-assets/blob/1.19.3/assets/minecraft/lang/zh_hk.json)\
+繁體中文（台灣）：[https://github.com/InventivetalentDev/minecraft-assets/blob/1.19.3/assets/minecraft/lang/zh_tw.json](https://github.com/InventivetalentDev/minecraft-assets/blob/1.19.3/assets/minecraft/lang/zh_tw.json)
