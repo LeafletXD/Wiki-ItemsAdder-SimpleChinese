@@ -1,20 +1,20 @@
-# 🍄 Surface populators
+# 🍄 地表生成器
 
-## Generate decorations on the world surface
+## 在世界表面生成装饰物
 
-With ItemsAdder you can generate decorations around the world to make your server more professional and original.
+使用 ItemsAdder，您可以在世界各地生成装饰物，使您的服务器更专业和独特。
 
-For example you can make new mushrooms, new little plants, rocks and decorations
+例如，您可以生成新的蘑菇、小植物、石头等装饰物。
 
 ![](../../.gitbook/assets/leaves.png)
 
 ![](../../.gitbook/assets/desert\_rose.png)
 
-## Creating a Surface Populator
+## 创建表面装饰生成器
 
-### Creating the configuration
+### 创建配置文件
 
-For example let's create a rose which will spawn around the world.
+例如，让我们创建一朵玫瑰，它将在世界各地生成。
 
 ```yaml
 info:
@@ -43,35 +43,28 @@ surface_decorators:
     amount: 1
 ```
 
-As you can see I set some properties:
+如您所见，我设置了一些属性：
 
-`block` is the ItemsAdder block to spawn as decoration.
+- `block` 是要作为装饰生成的 ItemsAdder 方块。
+- `bottom_blocks` 属性用于决定装饰可以生成在哪些方块类型上。
+- `biomes` 属性用于决定装饰可以生成在哪些有效生物群系中。
+- `worlds` 属性决定装饰可以在哪些世界中生成。
+- `chance` 是装饰在世界的每个区块中生成的概率。
+- `max_height` 是装饰可以生成的最大世界高度。
+- `min_height` 是装饰可以生成的最小世界高度。
+- `amount` 是生成装饰组中的方块数量，例如，您可以设置为5，使一组5个装饰方块相连生成。
 
-`bottom_blocks` property is used to decide the block types on which the decoration can spawn.
+## 创建方块
 
-`biomes` property is used to decide the valid biomes in which the decoration can spawn.
-
-`worlds` property decides the worlds in which the decoration can spawn.
-
-`chance` is the change of a decoration to spawn in each chunk of the world.
-
-`max_height` is the max world height where the decoration can spawn.
-
-`min_height` is the min world height where the decoration can spawn.
-
-`amount` is the amount of blocks to spawn in the decorations group, for example you can set 5 to make a group of 5 decorations spawn one attached to the other.
-
-## Creating the block
-
-Now you just have to create the block following the tutorial. You can use `REAL_NOTE`, `REAL_WIRE` `REAL_TRANSPARENT` and `REAL` blocks, depends on your needs.
+现在，您只需按照教程创建方块。您可以根据需要使用 `REAL_NOTE`、`REAL_WIRE`、`REAL_TRANSPARENT` 和 `REAL` 方块。
 
 {% content-ref url="block/create-a-block.md" %}
 [create-a-block.md](block/create-a-block.md)
 {% endcontent-ref %}
 
-## Example
+## 示例
 
-You can download the fully working addon here:
+您可以在此处下载完全可用的附加组件：
 
 {% embed url="https://www.spigotmc.org/resources/deco-worlddeco-add-autogenerating-decorations-on-your-world-surface.95207" %}
 
