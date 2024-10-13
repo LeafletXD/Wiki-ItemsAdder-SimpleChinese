@@ -152,7 +152,7 @@
   * [📤 用Google Drive托管(1.17.1+)](plugin-usage/resourcepack-hosting/google-drive-1.17.1+.md)
   * [📤 用OneDrive托管](plugin-usage/resourcepack-hosting/onedrive.md)
   * [🚨 保护你的资源被不被解压](plugin-usage/resourcepack-hosting/protect-resourcepack-from-unzip.md)
-  * [⚡ 最快使用的小技巧](plugin-usage/resourcepack-hosting/tips-for-fastest-usage.md)
+  * [⚡ 快速使用的小技巧](plugin-usage/resourcepack-hosting/tips-for-fastest-usage.md)
 * [🎨 添加内容](plugin-usage/adding-content/README.md)
   * [🗂️ 内容文件夹](plugin-usage/adding-content/configs-and-resourcepack.md)
   * [🎨 Minecraft美术风格指南](https://www.blockbench.net/wiki/guides/minecraft-style-guide)
