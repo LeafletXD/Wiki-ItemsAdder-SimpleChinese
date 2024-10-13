@@ -1,24 +1,24 @@
-# ⚔ Sword
+# ⚔ 剑
 
 {% hint style="danger" %}
-**Resourcepack hosting**
+**资源包托管**
 
-Remember to **decide** a [**resourcepack hosting**](../resourcepack-hosting/) method **before** you **start**.\
-I **advise** you to use **self-host** which is **easier** and **faster**, but you can also use **Dropbox** and similar
+记得**在开始之前**决定一个[**资源包托管**](../resourcepack-hosting/)方法。\
+我**建议**使用**自托管**，因为它**更简单**且**更快**，但你也可以使用**Dropbox**或类似服务。
 {% endhint %}
 
-## My first sword
+## 我的第一把剑
 
-### Creating the swords file
+### 创建剑的文件
 
 {% hint style="warning" %}
-This is an example sword (remember to change `my_items` [namespace ](broken-reference)to the one you want).
+这是一个示例剑（记得将 `my_items` [命名空间](broken-reference) 更改为你想要的）。
 {% endhint %}
 
-For example I created a **file** which will contain all my **custom swords**:\
+例如，我创建了一个**文件**，用于包含我所有的**自定义剑**：\
 `contents/my_items/configs/myswords.yml`
 
-In this file (`myswords.yml`) I start creating a simple sword called `mysword`
+在这个文件（`myswords.yml`）中，我开始创建一把名为 `mysword` 的简单剑。
 
 ```yaml
 info:
@@ -29,27 +29,26 @@ items:
     permission: mysword
     durability:
       max_custom_durability: 1324
-  
 ```
 
-## Item texture
+## 物品材质
 
-### Creating the texture file
+### 创建材质文件
 
-Now the fun part, let's set the sword texture.\
-To do that you have to put your sword `.png` texture file inside the correct folder.
+现在到了有趣的部分，让我们设置剑的材质。\
+要做到这一点，你需要将你的剑 `.png` 材质文件放在正确的文件夹中。
 
-In this case your **namespace** is `my_items` so you have to put it here:
+在这种情况下，你的**命名空间**是 `my_items`，所以你需要将它放在这里：
 
 `contents/my_items/textures/item/mysword.png`
 
 ![](../../.gitbook/assets/image\_\(14\).png)
 
-### Applying the texture file to your item
+### 将材质文件应用到你的物品
 
-Now open `myswords.yml` file again and add the `resource` part as I did.\
-As you can see I set `generate: true` and I set the textures for the item.\
-This tells the plugin to generate the 3D model automatically using your texture.
+现在再次打开 `myswords.yml` 文件，并添加 `resource` 部分，如我所做的。\
+正如你所看到的，我设置了 `generate: true` 并为物品设置了材质。\
+这告诉插件使用你的材质自动生成3D模型。
 
 ```yaml
 info:
@@ -67,30 +66,30 @@ items:
       - item/example_item.png
 ```
 
-## Final part
+## 最终部分
 
-Now you just need to tell the plugin to load your just added item.\
-To do that you have to:\
-\- join the server\
-\- make sure you accepted the resourcepacks\
-\- use the command `/iazip`\
-\- if you're using external-host (DropBox) scroll down and follow the instructions.\
-\- get the item using `/iaget mysword`\
-\- DONE!
+现在你只需告诉插件加载你刚刚添加的物品。\
+要做到这一点，你需要：\
+\- 加入服务器\
+\- 确保你接受了资源包\
+\- 使用命令 `/iazip`\
+\- 如果你使用外部托管（如 DropBox），向下滚动并按照说明操作。\
+\- 使用 `/iaget mysword` 获取物品\
+\- 完成！
 
-### Now get your item
+### 现在获取你的物品
 
 ![](../../.gitbook/assets/image\_\(18\).png)
 
 ![](../../.gitbook/assets/image\_\(19\).png)
 
-## If you're using external-host (Dropbox, GoogleDrive etc.) read here:
+## 如果你使用外部托管（Dropbox、GoogleDrive 等），请阅读这里：
 
 {% content-ref url="../resourcepack-hosting/resourcepack-on-dropbox.md" %}
 [resourcepack-on-dropbox.md](../resourcepack-hosting/resourcepack-on-dropbox.md)
 {% endcontent-ref %}
 
-## If you are using self-host or another hosting method read here:
+## 如果你使用自托管或其他托管方法，请阅读这里：
 
 {% content-ref url="../resourcepack-hosting/" %}
 [resourcepack-hosting](../resourcepack-hosting/)
