@@ -1,10 +1,10 @@
-# 📑 Minecraft language files
+# 📑 Minecraft语言文件
 
-With ItemsAdder you can easily overwrite Minecraft default translation files.
+使用ItemsAdder，您可以轻松覆盖Minecraft的默认翻译文件。
 
-### Example of usage: custom esc menu
+### 使用示例：自定义ESC菜单
 
-In this example I will change the Return to game text of ESC menu.
+在此示例中，我将更改ESC菜单中的“返回游戏”文本。
 
 ```yaml
 info:
@@ -12,19 +12,19 @@ info:
 minecraft_lang_overwrite:
   esc_menu_texts:
     entries:
-      "menu.returnToGame": "Return to &aSurvival &fGamemode"
+      "menu.returnToGame": "返回 &a生存 &f游戏模式"
     languages:
       - ALL
 ```
 
-### languages
+### `languages`
 
-The languages property is used to list all the languages where you want to change the text.\
-You should set it to only the languages of your playerbase, but I decided to set it to ALL so you will be sure that everyone can see the custom text despite their decided clientside language.
+`languages` 属性用于列出您希望更改文本的所有语言。\
+您应将其设置为仅包含您的玩家基础所使用的语言，但我决定将其设置为 `ALL`，以确保每个人都能看到自定义文本，无论他们选择的客户端语言是什么。
 
-### entries
+### `entries`
 
-It's the list of translated texts. \
-You can find the complete list here (change `1.19.3` to your version):
+这是翻译文本的列表。 \
+您可以在这里找到完整列表（请将 `1.19.3` 替换为您的版本）：
 
-[https://github.com/InventivetalentDev/minecraft-assets/blob/1.19.3/assets/minecraft/lang/en\_us.json](https://github.com/InventivetalentDev/minecraft-assets/blob/1.19.3/assets/minecraft/lang/en\_us.json)
+[https://github.com/InventivetalentDev/minecraft-assets/blob/1.19.3/assets/minecraft/lang/en_us.json](https://github.com/InventivetalentDev/minecraft-assets/blob/1.19.3/assets/minecraft/lang/en_us.json)
