@@ -194,7 +194,7 @@
     * [铁砧修理](plugin-usage/adding-content/recipes/anvil-repair.md)
   * [📚 翻译](plugin-usage/adding-content/translation.md)
   * [🔖 自定义头衔材质 (前缀)](plugin-usage/adding-content/ranks-textures-prefix.md)
-  * [🎁 战利品](plugin-usage/adding-content/loots.md)
+  * [🎁 掉落物](plugin-usage/adding-content/loots.md)
   * [💎 世界生成器](plugin-usage/adding-content/worlds-populators.md)
   * [🌳 树生成器](plugin-usage/adding-content/trees-populators/README.md)
     * [叶子和木头](plugin-usage/adding-content/trees-populators/laveas-and-wood.md)
