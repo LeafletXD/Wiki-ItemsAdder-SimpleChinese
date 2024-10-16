@@ -197,7 +197,7 @@
   * [🎁 掉落物](plugin-usage/adding-content/loots.md)
   * [💎 世界生成器](plugin-usage/adding-content/worlds-populators.md)
   * [🌳 树生成器](plugin-usage/adding-content/trees-populators/README.md)
-    * [叶子和木头](plugin-usage/adding-content/trees-populators/laveas-and-wood.md)
+    * [树叶和木头](plugin-usage/adding-content/trees-populators/laveas-and-wood.md)
     * [生成器](plugin-usage/adding-content/trees-populators/populator.md)
     * [树苗](plugin-usage/adding-content/trees-populators/saplings.md)
   * [🍄 地表生成器](plugin-usage/adding-content/surface-populators.md)
