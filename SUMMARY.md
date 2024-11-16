@@ -300,7 +300,7 @@
 ## 旧版
 
 * [旧版教程](old/old-guides/README.md)
-  * [🕸️ 旧版教程 v1.0](old/old-guides/old-v1.0-tutorials.md)
+  * [🕸️ 旧版教程 v1.0](https://lonedev.gitbook.io/itemsadder)
   * [➡️ 迁移 V1.0 版本的数据](old/old-guides/updating-from-1.0/README.md)
     * [将旧数据转换为v2版本](old/old-guides/updating-from-1.0/convert-old-files-to-v2.md)
     * [在游戏中转换旧物品/方块](old/old-guides/updating-from-1.0/convert-old-items-ingame.md)
@@ -309,3 +309,5 @@
   * [🐌 插件加载缓慢](old/old-guides/plugin-loading-very-slow.md)
   * [📤 自动外部托管](old/old-guides/automatic-upload-hosting.md)
   * [▯ 矩形字符 - 旧版](old/old-guides/rectangle-character-old.md)
+  * [🗑️ 删除默认内容 v3.2](old/old-guides/old-itemsadder.md)
+* [页面](old/page.md)
