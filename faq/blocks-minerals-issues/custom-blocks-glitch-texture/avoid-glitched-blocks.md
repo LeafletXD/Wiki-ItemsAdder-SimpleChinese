@@ -45,13 +45,13 @@ block-updates:
 ```
 
 {% hint style="warning" %}
-### 注意
+#### 注意
 
-设置 `disable-tripwire-updates: true` 将完全停止 tripwire 的更新。  
-这可能导致 tripwire 触发器无法再正常工作。
+设置 `disable-tripwire-updates: true` 将完全停止 tripwire 的更新。\
+这可能导致 tripwire 触发器无法再正常工作。\\
 
-设置 `disable-noteblock-updates: true` 也会造成相同的行为。  
-这意味着 NO 更新，因此你将无法使用音乐红石电路。
+设置 `disable-noteblock-updates: true` 也会造成相同的行为。\
+这意味着 NO 更新，因此你将无法使用音乐红石电路。\
 {% endhint %}
 
 ## Purpur（1.20.1 之前）高级修复
