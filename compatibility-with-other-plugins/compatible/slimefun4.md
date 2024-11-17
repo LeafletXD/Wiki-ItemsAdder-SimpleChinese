@@ -14,7 +14,7 @@
 
 * [在这里下载资源包](https://www.planetminecraft.com/texture-pack/slimefun-texture-by-raulh22/)
 * 将 [items-model.yml](https://www.mediafire.com/file/4s42i4b1uk6r05j/file) 文件粘贴到 Slimefun 文件夹内
-* 将 Slimefun 资源包与 ItemsAdder 资源包合并（[阅读教程](../../plugin-usage/merge-resourcepacks/)）
+* 将 Slimefun 资源包与 ItemsAdder 资源包合并（[阅读教程](../../plugin-usage/merge-resourcepacks.md)）
 * 完成
 
 ![](../../.gitbook/assets/13338410.png)

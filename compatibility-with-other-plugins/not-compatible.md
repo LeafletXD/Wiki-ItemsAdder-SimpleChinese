@@ -1,4 +1,8 @@
-# ⚠ 不兼容
+---
+icon: triangle-exclamation
+---
+
+# 不兼容
 
 _**与XX插件兼容吗？**_
 

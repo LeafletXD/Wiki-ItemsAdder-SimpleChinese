@@ -4,6 +4,6 @@
 
 ## 教程
 
-{% content-ref url="../../plugin-usage/adding-content/ranks-textures-prefix.md" %}
-[自定义头衔材质 (前缀)](../../plugin-usage/adding-content/ranks-textures-prefix.md)
+{% content-ref url="../../plugin-usage/adding-content/ranks-prefixes.md" %}
+[自定义头衔材质 (前缀)](../../plugin-usage/adding-content/ranks-prefixes.md)
 {% endcontent-ref %}

@@ -1,4 +1,8 @@
-# 📓 Denizen API
+---
+icon: terminal
+---
+
+# Denizen API
 
 {% hint style="warning" %}
 需要 ItemsAdder 3.2.4 及以上版本
