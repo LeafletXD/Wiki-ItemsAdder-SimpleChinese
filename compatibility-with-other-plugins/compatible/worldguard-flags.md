@@ -1,5 +1,5 @@
 ---
-描述: Worldguard flags列表
+description: Worldguard flags列表
 ---
 
 # WorldGuard

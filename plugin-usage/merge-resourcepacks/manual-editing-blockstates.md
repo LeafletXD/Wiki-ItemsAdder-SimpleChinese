@@ -1,5 +1,5 @@
 ---
-描述: 如何手动编辑 blockstates .json 文件
+description: 如何手动编辑 blockstates .json 文件
 ---
 
 # 🔧 手动编辑方块状态（blockstates）
