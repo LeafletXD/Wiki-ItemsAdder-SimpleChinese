@@ -49,7 +49,7 @@ description: 在 Bungeecord 网络中使用单一资源包，并为每个服务�
 
 {% hint style="danger" %}
 不要删除 `dictionaries`、`mcemojis`、`mcguis`、`mcicons`、`realcraft`、`various_configs` 文件夹。  
-阅读更多：[删除ItemsAdder的默认物品](../removing-default-stuff/)
+阅读更多：[删除ItemsAdder的默认物品](broken-reference)
 {% endhint %}
 
 基本上，你需要保留你想在该特定服务器（例如 `lobby`）中保留的功能文件夹。
