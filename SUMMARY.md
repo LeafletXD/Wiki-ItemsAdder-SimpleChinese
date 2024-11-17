@@ -310,5 +310,5 @@
   * [🐌 插件加载缓慢](old/old-guides/plugin-loading-very-slow.md)
   * [📤 自动外部托管](old/old-guides/automatic-upload-hosting.md)
   * [▯ 矩形字符 - 旧版](old/old-guides/rectangle-character-old.md)
-  * [🗑️ 删除默认内容 v3.2](old/old-guides/old-itemsadder.md)
+  * [🗑️ 删除默认内容 v3.2](faq/removing-default-stuff/old-itemsadder.md)
 * [页面](old/page.md)
