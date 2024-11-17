@@ -2,7 +2,7 @@
 描述: 如何安装插件
 ---
 
-# ⚙ 首次安装
+# ⚙️ 首次安装
 
 {% hint style="info" %}
 **您应该先在** 电脑上的 **测试服务器** 上按照此配置 **以避免错误** 和过多的重启... 玩家不喜欢服务器一直离线。\
@@ -13,8 +13,7 @@
 **确保** 所有插件和服务器软件都是最新的！\
 
 **检查** 您正在下载的ItemsAdder的版本!\
-<mark style="color:red;">**V3 版本只可用于 1.20.4或更低的版本**</mark>
-<mark style="color:red;">**V4 版本只可用于 1.20.6或更高的版本**</mark>
+<mark style="color:red;">**V3 版本只可用于 1.20.4或更低的版本**</mark> <mark style="color:red;">**V4 版本只可用于 1.20.6或更高的版本**</mark>
 {% endhint %}
 
 ## 步骤 1 - 安装插件和库（libraries）
@@ -80,6 +79,6 @@
 
 ### 删除默认物品 (可选)
 
-{% content-ref url="faq/removing-default-stuff/" %}
-[删除ItemsAdder的默认物品](faq/removing-default-stuff/)
+{% content-ref url="broken-reference" %}
+[删除ItemsAdder的默认物品](broken-reference)
 {% endcontent-ref %}
